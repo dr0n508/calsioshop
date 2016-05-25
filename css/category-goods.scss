@@ -1,0 +1,247 @@
+/****************category-boots**************/
+/********************************************/
+
+.bread-crumb {
+  background: #f3f3f3;
+  padding: 0 10px;
+  ul li {
+    display: inline-block;
+    &:last-child a {
+      color: #808080;
+    }
+    a {
+      font-size: 13px;
+      padding: 5px 0;
+      display: inline-block;
+    }
+    .fa {
+      margin-left: 5px;
+    }
+  }
+}
+
+.welcome-screen-teamware {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  &:before {
+    right: 0;
+    top: -70px;
+    content: "";
+    width: 116px;
+    height: 223px;
+    position: absolute;
+    background: url("../images/category_teamware/bg-welcome-screen.png") center center no-repeat;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 29px;
+    font-family: "mohavebold", sans-serif;
+    padding: 10px;
+  }
+  .sub-title-teamware {
+    background: #f3f3f3;
+    padding: 5px 10px;
+//    margin-bottom: 15px;
+    border-bottom: solid 1px #e6e6e6;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.welcome-screen {
+  background: url("../images/category_boots/bg-welcome.png") no-repeat right -100%;
+  padding: 0 10px 10px;
+  border-bottom: solid 1px #e6e6e6;
+  h1 {
+    font-size: 29px;
+    font-family: "mohavebold", sans-serif;
+    padding: 10px 0;
+  }
+  .sub-title {
+    font-family: "ralewayregular", sans-serif;
+    margin-bottom: 20px;
+  }
+  .filter-settings {
+    font-size: 12px;
+    a {
+      color: #5a5a5a;
+      display: inline-block;
+      margin-left: 10px;
+      .fa {
+        margin-right: 5px;
+        color: #2862a2;
+      }
+    }
+  }
+}
+
+.btn-wide {
+  display: block;
+  color: white;
+  text-align: center;
+  background: #054180;
+  text-decoration: none;
+  font-family: "mohavesemibold", sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.filtered-goods {
+  padding: 0 10px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.dropdown-brand {
+  border: solid 1px #dddddd;
+  background: #ffffff;
+  margin-bottom: 10px !important;
+  position: relative;
+  .fa {
+    position: absolute;
+    content: "";
+    right: 5px;
+    top: 6px;
+    color: #054180;
+    z-index: 50;
+  }
+  a {
+    text-decoration: none;
+  }
+  .dropdown-menu {
+    width: 100%;
+    margin: 15px 0 0;
+  }
+  select {
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    z-index: 100;
+  }
+
+}
+.order-filter .dropdown-menu {
+  margin: 25px 0 0;
+}
+.order-filter {
+  padding: 5px 0;
+  .btn-order-filter {
+    text-align: left;
+    float: left;
+    color: #054182;
+    .fa {
+      margin-left: 10px;
+    }
+  }
+  .sum-goods {
+    text-align: right;
+    float: right;
+  }
+}
+
+.list-filtered-goods {
+  .goods-information {
+    padding: 0;
+    a {
+      text-decoration: none;
+      .img-wrapper {
+        text-align: center;
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .new-ico {
+          position: absolute;
+          content: "";
+          width: 28px;
+          height: 28px;
+          background: url("../images/category_boots/new-ico.png") no-repeat right -100%;
+          top: 0;
+          right: 0;
+        }
+        .free-delivery-ico {
+          position: absolute;
+          content: "";
+          width: 28px;
+          height: 28px;
+          background: url("../images/category_boots/free-delivery-ico.png") no-repeat right -100%;
+          top: 0;
+          right: 0;
+        }
+      }
+      h2 {
+        font-size: 14px;
+        color: #054182;
+        font-family: "ralewaybold", sans-serif;
+        padding-right: 10px;
+      }
+      .price-goods {
+        padding: 5px 0;
+
+        .old-price {
+          color: gray;
+          font-family: "MohaveBoldItalic", sans-serif;
+          font-size: 14px;
+          margin-right: 10px;
+          text-decoration: line-through;
+        }
+        .current-price {
+          color: red;
+          font-family: "mohavebold", sans-serif;
+          font-size: 16px;
+        }
+      }
+      .size-goods {
+        color: #5a5a5a;
+        font-size: 12px !important;
+        min-height: 65px;
+        .sizes-list {
+          padding-right: 25px;
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+.pagination-goods {
+  padding: 15px 10px;
+  text-align: center;
+  .btn-prev, .btn-next {
+    color: white;
+    font-size: 16px;
+    padding: 6px 10px;
+    .text-btn {
+      font-family: "mohavesemibold", sans-serif;
+    }
+  }
+  .btn-prev {
+    float: left;
+  }
+  .btn-next {
+    float: right;
+  }
+  .number-active-page {
+    position: relative;
+    top: 8px;
+  }
+  .disable {
+    background: #9f9f9f;
+  }
+  .active {
+    background: #054180;
+  }
+
+}
