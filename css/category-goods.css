@@ -2,14 +2,14 @@
 /********************************************/
 .bread-crumb {
   background: #f3f3f3;
-  padding: 0 10px; }
+  padding: 5px 10px; }
   .bread-crumb ul li {
     display: inline-block; }
     .bread-crumb ul li:last-child a {
       color: #808080; }
     .bread-crumb ul li a {
-      font-size: 13px;
-      padding: 5px 0;
+      font-size: 12px;
+      padding: 0;
       display: inline-block; }
     .bread-crumb ul li .fa {
       margin-left: 5px; }
