@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(variables.css);
 @import url(category-goods.css);
+@import url(card-goods.css);
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea, address {
   padding: 0;
   margin: 0;

@@ -1,0 +1,127 @@
+.name-product {
+  background:   #f3f3f3;
+  font-size: 29px;
+  font-family: "mohavebold";
+  padding: 10px;
+}
+
+.price-rating {
+  background: #f3f3f3;
+  border-top: solid 1px #ffffff;
+  border-bottom: solid 1px #ffffff;
+  padding: 5px 10px;
+  .price-discount {
+    float: left;
+    .old-price {
+      float: left;
+      color: gray;
+      font-family: "MohaveBoldItalic", sans-serif;
+      font-size: 16px;
+      margin-right: 5px;
+      text-decoration: line-through;
+    }
+    .sale {
+      float: left;
+      color: gray;
+      font-family: "MohaveBold", sans-serif;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .current-price {
+      float: left;
+      color: #da2620;
+      font-family: "mohavebold", sans-serif;
+      font-size: 25px;
+      margin-right: 5px;
+    }
+  }
+  .rating {
+    margin-top: 15px;
+    float: right;
+    color: #da2620;
+    line-height: 20px;
+    span {
+      float: left;
+      margin-left: 2px;
+    }
+    .number-review {
+      color: #151515;
+    }
+  }
+}
+
+.select-size {
+  .dropdown-brand {
+    margin-bottom: 0 !important;
+  }
+  ul {
+    margin-left: 2px;
+    li {
+      font-size: 11px;
+      display: inline-block;
+      padding: 3px 5px;
+      &:first-child {
+        border-top: solid 1px #e6e6e6;
+        border-right: solid 1px #e6e6e6;
+        border-left: solid 1px #e6e6e6;;
+      }
+    }
+  }
+}
+
+.deliveri-info {
+  padding: 10px 0;
+//  background: #f3f3f3;
+  font-size: 11px;
+  text-align: center;
+  color: #595959;
+  span {
+    font-family: "ralewaybold", sans-serif;
+  }
+}
+
+.personalize-btn {
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 7px 0;
+  background: url("../images/logo-personalize.png") 95% 50% no-repeat, #054180;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  border-bottom: solid 2px #001d3b;
+  font-size: 12px;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  p {
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px;
+  }
+  .free {
+    color: #c2d909;
+    text-transform: uppercase;
+  }
+}
+
+.big-btn {
+  margin-bottom: 5px;
+  width: 100%;
+  background: #da2620;
+  color: #ffffff;
+  font-family: "mohavebold", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+  border-bottom: solid 2px #9a0500;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.bg-gray {
+  padding: 10px;
+  background: #f3f3f3;
+}
