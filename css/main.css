@@ -566,4 +566,30 @@ footer {
       color: #828589;
       font-size: 13px; }
 
+/******price-slider*/
+.wrap-slider {
+  padding: 100px 0; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none !important;
+  background: #054180 !important;
+  border-radius: 50%; }
+
+.ui-slider .ui-slider-handle {
+  width: 25px !important;
+  height: 25px !important;
+  outline: none !important; }
+
+.ui-slider-horizontal {
+  height: 0.1em !important;
+  display: block;
+  border: none !important;
+  background: #000000 !important; }
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.7em !important; }
+
+.ui-widget-header {
+  background: #000000 !important; }
+
 /*# sourceMappingURL=main.css.map */
