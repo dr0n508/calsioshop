@@ -309,13 +309,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 /**********filter************** */
 .filter {
-  text-align: center;
   background: #f3f3f3; }
   .filter .panel-body {
-    padding: 10px 0;
-    border-bottom: solid 1px white !important; }
+    padding: 10px;
+    border-bottom: solid 1px white !important;
+    background: #ffffff; }
+    .filter .panel-body p {
+      padding-bottom: 20px; }
+    .filter .panel-body li:before {
+      content: "-"; }
   .filter h4 {
     margin: 0;
+    text-align: center;
     border-bottom: solid 1px white; }
     .filter h4 a {
       font-family: "mohavebold", sans-serif;

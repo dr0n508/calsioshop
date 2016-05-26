@@ -397,18 +397,24 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 /**********filter************** */
 .filter {
-  text-align: center;
+
   background: #f3f3f3;
   .panel-body {
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: solid 1px white !important;
+    background: #ffffff;
+    p {
+      padding-bottom: 20px;
+    }
+    li:before {
+      content:"-";
+    }
   }
   h4 {
     margin: 0;
-
+    text-align: center;
     border-bottom: solid 1px white;
     a {
-
       font-family: "mohavebold", sans-serif;
       font-size: 16px;
       color: #054182;

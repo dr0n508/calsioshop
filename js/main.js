@@ -43,14 +43,4 @@ $(document).ready(function () {
         jQuery("#slider").slider("values",1,value2);
     });
 
-
-
-
-
-
-
-
-
-
-
 });
