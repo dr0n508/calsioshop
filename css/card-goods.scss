@@ -3,6 +3,10 @@
   font-size: 29px;
   font-family: "mohavebold";
   padding: 10px;
+  span {
+    font-size: 12px;
+    display: block;
+  }
 }
 
 .price-rating {
@@ -46,6 +50,22 @@
     }
     .number-review {
       color: #151515;
+    }
+  }
+}
+
+.sizes-teamware {
+  border-top: solid 1px #e6e6e6;
+  padding-top: 10px;
+  .wrap {
+    padding: 0 0 0 0;
+    p, .dropdown-brand {
+      padding: 0;
+    }
+    p {
+      line-height: 32px;
+      text-align: right;
+      padding-right: 5px;
     }
   }
 }
@@ -185,6 +205,7 @@
 
 .bx-wrapper {
   margin: 0 auto 40px;
+  padding: 10px 0;
   .bx-controls-direction a {
     width: 9px;
     height: 14px;
