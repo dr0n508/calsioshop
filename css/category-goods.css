@@ -192,4 +192,60 @@
   .pagination-goods .active {
     background: #054180; }
 
+/************************filter*****************/
+.filter-category-boots {
+  background: #f5f5f5; }
+  .filter-category-boots .header-filter {
+    background: #ffffff;
+    padding: 10px; }
+  .filter-category-boots .number-of-filters {
+    float: left;
+    line-height: 42px; }
+  .filter-category-boots .btn-reset, .filter-category-boots .btn-apply {
+    padding: 10px 15px;
+    margin-left: 10px;
+    float: right;
+    background: #9f9f9f;
+    color: #ffffff;
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px; }
+  .filter-category-boots .btn-apply {
+    float: right;
+    color: #ffffff;
+    font-family: "mohavebold", sans-serif; }
+  .filter-category-boots .btn-apply {
+    background: #054180; }
+  .filter-category-boots h4 {
+    border-bottom: solid 1px #ffffff; }
+    .filter-category-boots h4 .fa {
+      float: right; }
+    .filter-category-boots h4 a {
+      font-family: "mohavebold", sans-serif;
+      padding: 10px;
+      display: block;
+      color: #054182; }
+
+.checkbox22:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.checkbox22:not(checked) + label {
+  color: #808080; }
+
+.checkbox22:checked + label {
+  color: red; }
+
+#collapse-taglia .panel-body {
+  padding: 10px 0 10px 10px; }
+  #collapse-taglia .panel-body label {
+    width: 20%;
+    text-align: center;
+    float: left; }
+    #collapse-taglia .panel-body label span {
+      display: block;
+      background: #dcdcdc;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px 0; }
+
 /*# sourceMappingURL=category-goods.css.map */
