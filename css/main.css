@@ -573,7 +573,7 @@ footer {
 
 /******price-slider*/
 .wrap-slider {
-  padding: 100px 0; }
+  padding: 20px 0; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none !important;
@@ -586,7 +586,7 @@ footer {
   outline: none !important; }
 
 .ui-slider-horizontal {
-  height: 0.1em !important;
+  height: 1px !important;
   display: block;
   border: none !important;
   background: #000000 !important; }
@@ -596,5 +596,27 @@ footer {
 
 .ui-widget-header {
   background: #000000 !important; }
+
+.slider-range {
+  margin: 30px 0; }
+  .slider-range label {
+    width: 50%;
+    float: left; }
+    .slider-range label .wrap-input {
+      position: relative;
+      border: solid 1px #dcdcdc;
+      display: inline-block;
+      width: 50%;
+      padding: 5px 0 5px 10px; }
+      .slider-range label .wrap-input input {
+        border: none;
+        padding-left: 10px;
+        width: 100%;
+        display: inline-block; }
+      .slider-range label .wrap-input:before {
+        content: "\20AC";
+        position: absolute;
+        top: 5p;
+        left: 10px; }
 
 /*# sourceMappingURL=main.css.map */

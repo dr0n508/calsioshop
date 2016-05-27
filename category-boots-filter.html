@@ -284,7 +284,7 @@
             <div id="heading-marca" role="tab" class="panel-heading">
                 <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-marca" aria-expanded="false" aria-controls="collapse-marca" class="collapsed">Marca<span class="fa fa-plus"></span></a></h4>
             </div>
-            <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse">
+            <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse collapse-marca">
                 <div class="panel-body">
                     <input class="checkbox22" id="Asics" type="checkbox"/>
                     <label for="Asics">Asics (44)</label>
@@ -303,20 +303,6 @@
             </div>
             <div id="collapse-taglia" role="tabpanel" aria-labelledby="heading-taglia" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <input class="checkbox22" id="27" type="checkbox"/>
-                    <label for="27"><span>27</span></label>
-
-                    <input class="checkbox22" id="28" type="checkbox"/>
-                    <label for="28"><span>28</span></label>
-
-                    <input class="checkbox22" id="30" type="checkbox"/>
-                    <label for="30"><span>30</span></label>
-
-                    <input class="checkbox22" id="32" type="checkbox"/>
-                    <label for="32"><span>32</span></label>
-
-                    <input class="checkbox22" id="39" type="checkbox"/>
-                    <label for="39"><span>39</span></label>
 
                     <input class="checkbox22" id="27" type="checkbox"/>
                     <label for="27"><span>27</span></label>
@@ -327,11 +313,25 @@
                     <input class="checkbox22" id="30" type="checkbox"/>
                     <label for="30"><span>30</span></label>
 
+                    <input class="checkbox22" id="31" type="checkbox"/>
+                    <label for="31"><span>31</span></label>
+
+                    <input class="checkbox22" id="49" type="checkbox"/>
+                    <label for="49"><span>49</span></label>
+
+                    <input class="checkbox22" id="40" type="checkbox"/>
+                    <label for="40"><span>40</span></label>
+
+                    <input class="checkbox22" id="41" type="checkbox"/>
+                    <label for="41"><span>41</span></label>
+
+                    <input class="checkbox22" id="42" type="checkbox"/>
+                    <label for="42"><span>42</span></label>
+
                     <input class="checkbox22" id="32" type="checkbox"/>
                     <label for="32"><span>32</span></label>
 
-                    <input class="checkbox22" id="39" type="checkbox"/>
-                    <label for="39"><span>39</span></label>
+
 
                 </div>
             </div>
@@ -357,7 +357,24 @@
                 <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-prezo" aria-expanded="false" aria-controls="collapse-prezo" class="collapsed">prezo<span class="fa fa-plus"></span></a></h4>
             </div>
             <div id="collapse-prezo" role="tabpanel" aria-labelledby="heading-prezo" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+                <div class="panel-body">
+                    <!--price-slider-->
+                    <div class="wrap-slider">
+                    <div id="slider"></div>
+                    <div id="slider-range" class="slider-range">
+                        <label for="minCost">Min
+                            <div class="wrap-input">
+                                <input type="text" id="minCost" value="0"/>
+                            </div>
+                        </label>
+
+                        <label for="maxCost">Max
+                            <div class="wrap-input">
+                                <input type="text" id="maxCost" value="1000"/>
+                            </div>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -367,14 +384,21 @@
 
 
 
-</body>
-</html>
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- 2. Подключим jQuery UI -->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
