@@ -193,6 +193,13 @@
     background: #054180; }
 
 /************************filter*****************/
+#myModal {
+  padding: 0 !important; }
+  #myModal .modal-dialog {
+    margin: 0; }
+    #myModal .modal-dialog .modal-body {
+      padding: 0; }
+
 .filter-category-boots {
   background: #f5f5f5; }
   .filter-category-boots .header-filter {
