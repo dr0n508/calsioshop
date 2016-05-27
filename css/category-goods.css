@@ -280,6 +280,16 @@
 .list-group.panel > .list-group-item {
   border-radius: 0; }
 
+.list-group-item .fa {
+  float: right; }
+.list-group-item .fa.fa-minus {
+  display: none; }
+
+.list-group-item[aria-expanded="true"] .fa.fa-plus {
+  display: none; }
+.list-group-item[aria-expanded="true"] .fa.fa-minus {
+  display: block !important; }
+
 .list-group-submenu {
   margin-left: 20px; }
 
