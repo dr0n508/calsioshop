@@ -202,6 +202,8 @@
     float: left;
     line-height: 42px; }
   .filter-category-boots .btn-reset, .filter-category-boots .btn-apply {
+    border: none;
+    outline: none;
     padding: 10px 15px;
     margin-left: 10px;
     float: right;
