@@ -17,7 +17,11 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
     <link rel="stylesheet" href="css/main.css"/>
+
+
 </head>
 <body>
 <header>
@@ -121,6 +125,13 @@
             <span class="fa fa-chevron-down"></span>
         </div>
     </div>
+
+
+    <select class="select2" name="color" id="color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+    </select>
 
 
 
@@ -276,14 +287,26 @@
     </div>
 </footer>
 
-</body>
-</html>
-
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
+<!-- 2. Подключим jQuery UI -->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<!--jQuery.plugins-->
 <script src="js/bootstrap.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+<!--Custom JS-->
+<script src="js/main.js"></script>
+
 </body>
 </html>

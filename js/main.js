@@ -45,4 +45,8 @@ $(document).ready(function () {
         $("#slider").slider("values",1,value2);
     });
 
+    $('.select2').select2();
+
+
+
 });
