@@ -1,14 +1,19 @@
 $(document).ready(function () {
 
+    /**
+     * jQuery slider for images with mobile events support
+     */
     $('.bxslider').bxSlider();
 
 
-///price-slider
-
+    /**
+     * jQuery UI slider widget
+     * Drag a handle to select a numeric value.
+     */
     $("#slider").slider({
         min: 0,
         max: 1000,
-        values: [100,900],
+        values: [100, 900],
         range: true,
         stop: function(event, ui) {
             $("input#minCost").val($("#slider").slider("values",0));
@@ -31,7 +36,6 @@ $(document).ready(function () {
         $("#slider").slider("values",0,value1);
     });
 
-
     $("input#maxCost").change(function(){
         var value1=$("input#minCost").val();
         var value2=$("input#maxCost").val();
@@ -45,8 +49,8 @@ $(document).ready(function () {
         $("#slider").slider("values",1,value2);
     });
 
+    /**
+     * The jQuery replacement for select boxes
+     */
     $('.select2').select2();
-
-
-
 });
