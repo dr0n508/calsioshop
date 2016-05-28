@@ -51,6 +51,7 @@ $(document).ready(function () {
 
     /**
      * The jQuery replacement for select boxes
+     * init select2 with template
      */
     function formatState (state) {
       if (!state.id) { return state.text; }
@@ -68,45 +69,24 @@ $(document).ready(function () {
 
     /**
      * Custom filter selection
+     * get value of clicked inputs
      */
-
-    // get value of clicked inputs
     $('.checkbox22').click(function (e) {
-      // e.preventDefault();
-      // console.log('selected value of opend filter');
-      // console.log($( "input:checked" ).length);
-      // console.log($(this).val());
-      // insert selected items from filter
-      // console.log($(this).is(':checked'));
-      // console.log($( e.target ).closest('.panel').find('[data-selected-items]'));
+      e.preventDefault();
       if ($(this).is(':checked')) {
+        // add filter selected items fot appropriate filter
         $( e.target ).closest('.panel').find('[data-selected-items]').append(
           '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
         );
+        // add filter selected items fot global filter view
         $('#global-filter-settings').append(
           '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
         );
       } else {
+        // remove filter selected items fot appropriate filter
         $( e.target ).closest('.panel').find('[data-selected-items]').find('.' + $(this).val()).remove();
-        $('#global-filter-settings').find('.' + $(this).val()).remove(
-          '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
-        );
+        // remove filter selected items fot global filter view
+        $('#global-filter-settings').find('.' + $(this).val()).remove();
       }
     });
-
-    // add selected items into html
-    // $('#filterAccordion').on('shown.bs.collapse', function (e) {
-    //   e.preventDefault();
-    //   console.log('id of opend filter');
-    //   console.log(e.target.id);
-    //
-    // });
-
-
-    // $('#filterAccordion').on('hidden.bs.collapse', function (e) {
-    //   e.preventDefault();
-    //   console.log(e);
-    // });
-
-
 });
