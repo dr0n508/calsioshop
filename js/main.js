@@ -70,9 +70,31 @@ $(document).ready(function () {
     /**
      * Custom filter selection
      */
-    $('#filterAccordion').click(function (e) {
-      e.preventDefault();
-      console.log(e.target);
+
+    // get value of clicked inputs
+    $('.checkbox22').click(function (e) {
+      // e.preventDefault();
+      console.log('selected value of opend filter');
+      console.log($( "input:checked" ).length);
+      console.log($(this).val());
+      // insert selected items from filter
+      $('[data-selected-items]').append(
+        '<a href="#" class="' + $(this).val() + '"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
+      );
     });
+
+    // add selected items into html
+    // $('#filterAccordion').on('shown.bs.collapse', function (e) {
+    //   e.preventDefault();
+    //   console.log('id of opend filter');
+    //   console.log(e.target.id);
+    // });
+
+
+    // $('#filterAccordion').on('hidden.bs.collapse', function (e) {
+    //   e.preventDefault();
+    //   console.log(e);
+    // });
+
 
 });
