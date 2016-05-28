@@ -13,7 +13,7 @@ $(document).ready(function () {
     $("#slider").slider({
         min: 0,
         max: 1000,
-        values: [100, 900],
+        values: [0, 1000],
         range: true,
         stop: function(event, ui) {
             $("input#minCost").val($("#slider").slider("values",0));
@@ -52,5 +52,27 @@ $(document).ready(function () {
     /**
      * The jQuery replacement for select boxes
      */
-    $('.select2').select2();
+    function formatState (state) {
+      console.log(state);
+      if (!state.id) { return state.text; }
+      var cssStyles = ' style=width:10px;height:10px;display:inline-block;vertical-align:middle;background-color:' + state.id;
+      var $state = $(
+        '<p style="width:100px;padding:5px;"><span' + cssStyles + '>' + state.text + '</span></p>'
+      );
+      return $state;
+    }
+    $('.select2').select2({
+      templateResult: formatState,
+      templateSelection: formatState,
+      minimumResultsForSearch: Infinity
+    });
+
+    /**
+     * Custom filter selection
+     */
+    $('#filterAccordion').click(function (e) {
+      e.preventDefault();
+      console.log(e.target);
+    });
+
 });
