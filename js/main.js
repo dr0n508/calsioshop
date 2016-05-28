@@ -53,7 +53,6 @@ $(document).ready(function () {
      * The jQuery replacement for select boxes
      */
     function formatState (state) {
-      console.log(state);
       if (!state.id) { return state.text; }
       var cssStyles = ' style=width:10px;height:10px;display:inline-block;vertical-align:middle;background-color:' + state.id;
       var $state = $(
@@ -74,13 +73,25 @@ $(document).ready(function () {
     // get value of clicked inputs
     $('.checkbox22').click(function (e) {
       // e.preventDefault();
-      console.log('selected value of opend filter');
-      console.log($( "input:checked" ).length);
-      console.log($(this).val());
+      // console.log('selected value of opend filter');
+      // console.log($( "input:checked" ).length);
+      // console.log($(this).val());
       // insert selected items from filter
-      $('[data-selected-items]').append(
-        '<a href="#" class="' + $(this).val() + '"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
-      );
+      // console.log($(this).is(':checked'));
+      // console.log($( e.target ).closest('.panel').find('[data-selected-items]'));
+      if ($(this).is(':checked')) {
+        $( e.target ).closest('.panel').find('[data-selected-items]').append(
+          '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+        );
+        $('#global-filter-settings').append(
+          '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+        );
+      } else {
+        $( e.target ).closest('.panel').find('[data-selected-items]').find('.' + $(this).val()).remove();
+        $('#global-filter-settings').find('.' + $(this).val()).remove(
+          '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+        );
+      }
     });
 
     // add selected items into html
@@ -88,6 +99,7 @@ $(document).ready(function () {
     //   e.preventDefault();
     //   console.log('id of opend filter');
     //   console.log(e.target.id);
+    //
     // });
 
 
