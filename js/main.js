@@ -78,14 +78,14 @@ $(document).ready(function () {
         '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
       );
       // add filter selected items fot global filter view
-      $('#global-filter-settings').append(
+      $('[data-global-filter-settings]').append(
         '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
       );
     } else {
       // remove filter selected items fot appropriate filter
       $( e.target ).closest('.panel').find('[data-selected-items]').find('.' + $(this).val()).remove();
       // remove filter selected items fot global filter view
-      $('#global-filter-settings').find('.' + $(this).val()).remove();
+      $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
     }
   });
 
@@ -95,7 +95,11 @@ $(document).ready(function () {
    */
   $('[data-selected-items]').click(function (e) {
     var clickedLiClass = $(e.target).closest('li').attr('class');
+    //remove filter option from global filter list
+    $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
+    // remove filter option from filter option list
     $(e.target).closest('li').remove();
+    // uncheck filter option
     $(this).parent().next().find('#' + clickedLiClass).attr('checked', false);
   });
 });
