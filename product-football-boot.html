@@ -171,11 +171,54 @@
         <p>Consegna gratuita per questo prodotto</p>
     </div>
 
-    <a href="#" class="personalize-btn">
-        <p>Personalizza il prodotto</p>
-        <span>NOME max 8 caratteri</span>
-        <span class="free">GRATUITO</span>
-    </a>
+
+
+    <div class="panel-group personalization-boots" id="personalizationBoots" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div id="persBoots" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-personalization">
+                <div class="panel-body">
+                        <h2><a role="button" data-toggle="collapse" data-parent="#personalizationBoots" href="#persBoots" aria-expanded="true" aria-controls="persBoots">Personalizzare il prodotto <span class="fa fa-minus" aria-hidden="true"></span></a></h2>
+                        <section class="offer-calsioshop">
+                            <p>Brilla in campo con STARiD,
+                                la personalizzazione professionale che rende uniche le tue scarpe proprio.</p>
+                        </section>
+                        <form action="">
+                            <div class="input-personalization">
+                                <div class="label-input clearfix">
+                                    <label for="name">NOME max 8 caratteri </label>
+                                    <span>GRATUITO</span>
+                                </div>
+                                <input type="text" id="name" maxlength="8" placeholder="nome"/>
+                            </div>
+                            <div class="input-personalization">
+                                <div class="label-input clearfix">
+                                    <label for="select-flag">BANDIERA (+10€)</label>
+                                    <span>( opzionale )</span>
+                                </div>
+                                <select name="select-flag" id="select-flag">
+                                    <option value="">Seleziona bandiera...</option>
+                                    <option value="">italy</option>
+                                    <option value="">us</option>
+                                    <option value="">uk</option>
+                                </select>
+                            </div>
+                        </form>
+                </div>
+            </div>
+            <div class="panel-heading" role="tab" id="heading-personalization">
+                <h4 class="panel-title">
+                    <a class="personalize-btn collapsed" role="button" data-toggle="collapse" data-parent="#personalizationBoots" href="#persBoots" aria-expanded="true" aria-controls="persBoots">
+                        <p>Personalizza il prodotto</p>
+                        <span>NOME max 8 caratteri</span>
+                        <span class="free">GRATUITO</span>
+                    </a>
+
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
     <a href="#" class="big-btn">Aggiungi al carrello</a>
 </section>
 

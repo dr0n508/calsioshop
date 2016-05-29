@@ -56,21 +56,23 @@
       text-align: right;
       padding-right: 5px; }
 
-.select-size .dropdown-brand {
-  margin-bottom: 0 !important; }
-.select-size ul {
-  margin-left: 2px; }
-  .select-size ul li {
-    font-size: 11px;
-    display: inline-block;
-    padding: 3px 5px; }
-    .select-size ul li:first-child {
-      border-top: solid 1px #e6e6e6;
-      border-right: solid 1px #e6e6e6;
-      border-left: solid 1px #e6e6e6; }
+.select-size {
+  padding: 10px; }
+  .select-size .dropdown-brand {
+    margin-bottom: 0 !important; }
+  .select-size ul {
+    margin-left: 2px; }
+    .select-size ul li {
+      font-size: 11px;
+      display: inline-block;
+      padding: 3px 5px; }
+      .select-size ul li:first-child {
+        border-top: solid 1px #e6e6e6;
+        border-right: solid 1px #e6e6e6;
+        border-left: solid 1px #e6e6e6; }
 
 .deliveri-info {
-  padding: 10px 0;
+  padding: 10px;
   font-size: 11px;
   text-align: center;
   color: #595959; }
@@ -113,7 +115,6 @@
     color: #ffffff; }
 
 .bg-gray {
-  padding: 10px;
   background: #f3f3f3; }
 
 .offer-calsioshop {
@@ -187,5 +188,38 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #054182; }
+
+/****************personalization-boots**********/
+.personalization-boots .panel-body {
+  padding: 0;
+  background: #f3f3f3; }
+.personalization-boots .personalize-btn {
+  display: none; }
+.personalization-boots .personalize-btn.collapsed {
+  display: block; }
+.personalization-boots h2 a {
+  font-family: "mohavebold", sans-serif;
+  color: #1b4473;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: solid 1px #ffffff;
+  border-top: solid 1px #ffffff;
+  display: block; }
+  .personalization-boots h2 a span {
+    float: right; }
+.personalization-boots .offer-calsioshop {
+  background: none;
+  padding: 10px 100px 10px 10px !important; }
+  .personalization-boots .offer-calsioshop:after, .personalization-boots .offer-calsioshop:before {
+    width: 40%; }
+  .personalization-boots .offer-calsioshop p {
+    color: #000000;
+    font-size: 14px; }
+.personalization-boots .label-input label {
+  float: left; }
+.personalization-boots .label-input span {
+  float: right; }
+.personalization-boots .input-personalization {
+  padding: 10px; }
 
 /*# sourceMappingURL=card-goods.css.map */
