@@ -222,4 +222,15 @@
 .personalization-boots .input-personalization {
   padding: 10px; }
 
+/****************personalization-teamware**********/
+.persolanisation-teamware .select-number-name .size-pers {
+  width: 20%;
+  float: left; }
+.persolanisation-teamware .select-number-name .number-pers {
+  width: 30%;
+  float: left; }
+.persolanisation-teamware .select-number-name .name-pers {
+  width: 50%;
+  float: left; }
+
 /*# sourceMappingURL=card-goods.css.map */

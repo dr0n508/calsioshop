@@ -280,18 +280,28 @@
 .list-group.panel > .list-group-item {
   border-radius: 0; }
 
-.list-group-item .fa {
-  float: right; }
-.list-group-item .fa.fa-minus {
-  display: none; }
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0; }
+  .list-group-item .fa {
+    float: right; }
+  .list-group-item .fa.fa-minus {
+    display: none; }
 
 .list-group-item[aria-expanded="true"] .fa.fa-plus {
   display: none; }
 .list-group-item[aria-expanded="true"] .fa.fa-minus {
   display: block !important; }
 
-.list-group-submenu {
-  margin-left: 20px; }
+.list-group-submenu .list-group-item {
+  padding: 10px 15px 10px 35px; }
+
+.list-group-submenu .list-group-subsubmenu .list-group-item {
+  padding: 10px 15px 10px 55px; }
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+  font-weight: 600; }
 
 .main-item {
   background: #f3f3f3;
