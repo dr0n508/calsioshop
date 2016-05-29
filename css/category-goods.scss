@@ -87,8 +87,9 @@
   font-size: 16px;
   padding: 5px;
   margin-bottom: 10px;
-  &:hover {
+  &:hover, &:focus {
     color: #ffffff;
+    text-decoration: none;
   }
 }
 
@@ -224,6 +225,9 @@
     padding: 6px 10px;
     .text-btn {
       font-family: "mohavesemibold", sans-serif;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
     }
   }
   .btn-prev {

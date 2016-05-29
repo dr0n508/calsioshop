@@ -69,8 +69,9 @@
   font-size: 16px;
   padding: 5px;
   margin-bottom: 10px; }
-  .btn-wide:hover {
-    color: #ffffff; }
+  .btn-wide:hover, .btn-wide:focus {
+    color: #ffffff;
+    text-decoration: none; }
 
 .filtered-goods {
   padding: 0 10px;
@@ -180,6 +181,8 @@
     padding: 6px 10px; }
     .pagination-goods .btn-prev .text-btn, .pagination-goods .btn-next .text-btn {
       font-family: "mohavesemibold", sans-serif; }
+    .pagination-goods .btn-prev:hover, .pagination-goods .btn-prev:focus, .pagination-goods .btn-next:hover, .pagination-goods .btn-next:focus {
+      text-decoration: none; }
   .pagination-goods .btn-prev {
     float: left; }
   .pagination-goods .btn-next {
