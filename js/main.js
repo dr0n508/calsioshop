@@ -57,7 +57,7 @@ $(document).ready(function () {
     if (!state.id) { return state.text; }
     var cssStyles = ' style=width:10px;height:10px;display:inline-block;vertical-align:middle;background-color:' + state.id;
     var $state = $(
-      '<p style="width:100px;padding:5px;"><span' + cssStyles + '>' + state.text + '</span></p>'
+      '<p style="width:100px;padding:5px;"><span' + cssStyles + '></span><span>' + state.text + '</span></p>'
     );
     return $state;
   }
@@ -72,6 +72,7 @@ $(document).ready(function () {
    * get value of clicked inputs
    */
   $('.checkbox22').click(function (e) {
+    $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
     if ($(this).is(':checked')) {
       // add filter selected items fot appropriate filter
       $( e.target ).closest('.panel').find('[data-selected-items]').append(
@@ -89,6 +90,7 @@ $(document).ready(function () {
     }
   });
 
+
   /**
    * Remove selected filter options
    * and uncheck inputs at filter options
@@ -101,5 +103,14 @@ $(document).ready(function () {
     $(e.target).closest('li').remove();
     // uncheck filter option
     $(this).parent().next().find('#' + clickedLiClass).attr('checked', false);
+    $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+  });
+
+  $('[data-global-filter-settings]').click(function (e) {
+    var clickedLiClass = $(e.target).closest('li').attr('class');
+    $('#filterAccordion').find('[data-selected-items]').find('.' + clickedLiClass).remove();
+    $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
+    $('#filterAccordion').find('input#' + clickedLiClass).attr('checked', false);
+    $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
   });
 });
