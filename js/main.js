@@ -69,6 +69,15 @@ $(document).ready(function () {
 
   });
 
+    $('.select2-size').select2({
+        minimumResultsForSearch: Infinity,
+        placeholder: "Seleziona una taglia"
+    });
+    $('.select2-brand').select2({
+        minimumResultsForSearch: Infinity,
+        placeholder: "Seleziona una marca"
+    });
+
   $('b[role="presentation"]').hide();
   $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
 
