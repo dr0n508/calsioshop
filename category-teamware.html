@@ -110,52 +110,53 @@
 </section>
 <section class="welcome-screen-teamware">
     <h1>Vesti il Tuo Team</h1>
+    <form action="">
+        <div class="sub-title-teamware">
 
-
-
-    <div class="sub-title-teamware">
-        <p>Quale ė il tuo marchio preferito?</p>
-        <div>
-            <select class="select2 form-control" name="brand" id="">
-                <option value="macra">Seleziona una marca</option>
-                <option value="nike">nike</option>
-                <option value="reebok">reebok</option>
-                <option value="adidas">adidas</option>
-            </select>
-            <!--<span class="fa fa-chevron-down"></span>-->
+            <p>Quale ė il tuo marchio preferito?</p>
+            <div>
+                <select class="select2 form-control" name="brand" id="">
+                    <option></option>
+                    <option value="adidas">Joma</option>
+                    <option value="nike">Nike</option>
+                    <option value="reebok">Reebok</option>
+                    <option value="adidas">Adidas</option>
+                </select>
+            </div>
         </div>
-    </div>
 
+        <section class="filter-personal-prefer">
+            <div class="number-players clearfix">
+                <p>Quanti siete?</p>
+                <input id="under10" class="checkbox22" type="radio" name="sum" required value="5-10"/>
+                <label for="under10"><span>Da 5 a10</span></label>
+                <input id="from10to20" class="checkbox22" type="radio" name="sum" required value="10-20"/>
+                <label for="from10to20"><span>Da 10 a 20</span></label>
+                <input id="more20" class="checkbox22" type="radio" name="sum" required value="20+"/>
+                <label for="more20"><span>Più di 20</span></label>
+            </div>
 
+                <p>Qual'ė la taglia più usata?</p>
+                <select class="select2 form-control" name="size" required id="size">
+                    <option></option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
 
+                <p>Quale è il colore del tuo team?</p>
+                <select class="select2 form-control" name="color" required id="color">
+                    <option></option>
+                    <option value="#1702B5">Red</option>
+                    <option value="#FFFE93">Green</option>
+                    <option value="#96FF00">Yellow</option>
+                </select>
 
-    <div class="sub-title-teamware">
-        <p>Quanti siete?</p>
-        <input type="radio" name="sum" value="5-10"/>
-        <input type="radio" name="sum" value="10-20"/>
-        <input type="radio" name="sum" value="20+"/>
-    </div>
-
-    <div class="sub-title-teamware">
-        <p>Qual'ė la taglia più usata?</p>
-        <select class="select2 form-control" name="size" id="size">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-        </select>
-    </div>
-
-    <div class="sub-title-teamware">
-        <p>Quale è il colore del tuo team?</p>
-    <select class="select2 form-control" name="color" id="color">
-        <option value="#1702B5">Red</option>
-        <option value="#FFFE93">Green</option>
-        <option value="#96FF00">Yellow</option>
-    </select>
-    </div>
-
+            <a href="" class="btn-wide">Inizia la Ricerca</a>
+        </section>
+    </form>
 
 
 

@@ -26,7 +26,7 @@
   margin-bottom: 10px;
   &:before {
     right: 0;
-    top: -70px;
+    bottom: 0;
     content: "";
     width: 116px;
     height: 223px;
@@ -43,7 +43,7 @@
     background: #f3f3f3;
     padding: 5px 10px;
 //    margin-bottom: 15px;
-    border-bottom: solid 1px #e6e6e6;
+//    border-bottom: solid 1px #e6e6e6;
     p {
       margin-bottom: 5px;
     }
@@ -423,6 +423,57 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
   font-family: 'mohavebold', sans-serif;
   font-size: 16px;
   color: #054182 !important;
+}
+
+
+/******filter-personal-prefer******/
+.filter-personal-prefer {
+  padding: 10px;
+  background: #f3f3f3;
+  p {
+    padding: 5px 0;
+  }
+  .btn-wide {
+    margin-top: 10px;
+    position: relative;
+    z-index: 3;
+  }
+  .number-players {
+    position: relative;
+    z-index: 1;
+    label {
+      width: 33.33%;
+      font-size: 14px;
+      padding: 6px 0;
+      float: left;
+      span {
+        border: solid 1px #aaa;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        margin-right: 10px;
+      }
+    }
+    .checkbox22:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+    .checkbox22:not(checked) + label {
+      color: #093d75;
+      font-weight: 400;
+      span {
+        background: #ffffff;
+      }
+    }
+    .checkbox22:checked + label {
+      color: #000000;
+      font-weight: 600;
+      span {
+      background: #f3f3f3;
+      }
+    }
+
+  }
 }
 
 

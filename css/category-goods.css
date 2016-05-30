@@ -20,7 +20,7 @@
   margin-bottom: 10px; }
   .welcome-screen-teamware:before {
     right: 0;
-    top: -70px;
+    bottom: 0;
     content: "";
     width: 116px;
     height: 223px;
@@ -33,8 +33,7 @@
     padding: 10px; }
   .welcome-screen-teamware .sub-title-teamware {
     background: #f3f3f3;
-    padding: 5px 10px;
-    border-bottom: solid 1px #e6e6e6; }
+    padding: 5px 10px; }
     .welcome-screen-teamware .sub-title-teamware p {
       margin-bottom: 5px; }
 
@@ -311,6 +310,44 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
   font-family: 'mohavebold', sans-serif;
   font-size: 16px;
   color: #054182 !important; }
+
+/******filter-personal-prefer******/
+.filter-personal-prefer {
+  padding: 10px;
+  background: #f3f3f3; }
+  .filter-personal-prefer p {
+    padding: 5px 0; }
+  .filter-personal-prefer .btn-wide {
+    margin-top: 10px;
+    position: relative;
+    z-index: 3; }
+  .filter-personal-prefer .number-players {
+    position: relative;
+    z-index: 1; }
+    .filter-personal-prefer .number-players label {
+      width: 33.33%;
+      font-size: 14px;
+      padding: 6px 0;
+      float: left; }
+      .filter-personal-prefer .number-players label span {
+        border: solid 1px #aaa;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        margin-right: 10px; }
+    .filter-personal-prefer .number-players .checkbox22:not(checked) {
+      position: absolute;
+      opacity: 0; }
+    .filter-personal-prefer .number-players .checkbox22:not(checked) + label {
+      color: #093d75;
+      font-weight: 400; }
+      .filter-personal-prefer .number-players .checkbox22:not(checked) + label span {
+        background: #ffffff; }
+    .filter-personal-prefer .number-players .checkbox22:checked + label {
+      color: #000000;
+      font-weight: 600; }
+      .filter-personal-prefer .number-players .checkbox22:checked + label span {
+        background: #f3f3f3; }
 
 /****custom-inputs*****/
 .select2-container .select2-container .select2-selection--single {
