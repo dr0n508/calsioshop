@@ -290,19 +290,35 @@
   .btn-apply {
     background: #054180;
   }
-  h4 {
+  .panel-heading {
     border-bottom: solid 1px #ffffff;
-    .fa {
-      float: right;
+    padding: 10px;
+    h4 {
+      .fa {
+        float: right;
+      }
+      a {
+        font-family: "mohavebold", sans-serif;
+        display: block;
+        color: #054182;
+      }
+  }
+  ul[data-selected-items] li {
+    display: inline-block;
+    margin-right: 5px;
+    span:last-child {
+      color: #5a5a5a;
     }
-
-    a {
-      font-family: "mohavebold", sans-serif;
-      padding: 10px;
-      display: block;
-      color: #054182;
+    .fa {
+      padding-right: 3px;
     }
   }
+
+  }
+}
+
+ul[data-global-filter-settings] li {
+  display: inline-block;
 }
 
 .collapse-marca .panel-body {

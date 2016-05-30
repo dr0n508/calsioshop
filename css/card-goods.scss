@@ -249,7 +249,20 @@
     background: #f3f3f3;
   }
   .personalize-btn {
+    padding: 10px 0;
     display: none;
+    p, span {
+      color: #ffffff;
+    }
+    .free {
+      color: #c2d909;
+    }
+    &:hover, &:focus {
+      p, span {color: #ffffff}
+      .free {
+        color: #c2d909;
+      }
+    }
   }
   .personalize-btn.collapsed {
     display: block;

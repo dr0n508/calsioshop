@@ -194,7 +194,16 @@
   padding: 0;
   background: #f3f3f3; }
 .personalization-boots .personalize-btn {
+  padding: 10px 0;
   display: none; }
+  .personalization-boots .personalize-btn p, .personalization-boots .personalize-btn span {
+    color: #ffffff; }
+  .personalization-boots .personalize-btn .free {
+    color: #c2d909; }
+  .personalization-boots .personalize-btn:hover p, .personalization-boots .personalize-btn:hover span, .personalization-boots .personalize-btn:focus p, .personalization-boots .personalize-btn:focus span {
+    color: #ffffff; }
+  .personalization-boots .personalize-btn:hover .free, .personalization-boots .personalize-btn:focus .free {
+    color: #c2d909; }
 .personalization-boots .personalize-btn.collapsed {
   display: block; }
 .personalization-boots h2 a {

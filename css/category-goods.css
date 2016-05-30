@@ -225,15 +225,25 @@
     font-family: "mohavebold", sans-serif; }
   .modal-content .btn-apply {
     background: #054180; }
-  .modal-content h4 {
-    border-bottom: solid 1px #ffffff; }
-    .modal-content h4 .fa {
+  .modal-content .panel-heading {
+    border-bottom: solid 1px #ffffff;
+    padding: 10px; }
+    .modal-content .panel-heading h4 .fa {
       float: right; }
-    .modal-content h4 a {
+    .modal-content .panel-heading h4 a {
       font-family: "mohavebold", sans-serif;
-      padding: 10px;
       display: block;
       color: #054182; }
+    .modal-content .panel-heading ul[data-selected-items] li {
+      display: inline-block;
+      margin-right: 5px; }
+      .modal-content .panel-heading ul[data-selected-items] li span:last-child {
+        color: #5a5a5a; }
+      .modal-content .panel-heading ul[data-selected-items] li .fa {
+        padding-right: 3px; }
+
+ul[data-global-filter-settings] li {
+  display: inline-block; }
 
 .collapse-marca .panel-body label {
   width: 100%;
