@@ -76,7 +76,11 @@ $(document).ready(function () {
   $('.select2-brand').select2({
       minimumResultsForSearch: Infinity,
       placeholder: "Seleziona una marca"
+  }).on("change", function(e) {
+      $('.filter-personal-prefer').addClass("db");
   });
+
+
 
   $('b[role="presentation"]').hide();
   $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
