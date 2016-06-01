@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-  /**
-   * Custom event
-   */
-  $(document).on('testEvent', function(e, eventInfo) {
-    console.log('testEvent happend');
-  });
+  // /**
+  //  * Custom event
+  //  */
+  // $(document).on('testEvent', function(e, eventInfo) {
+  //   console.log('testEvent happend');
+  // });
 
   /**
    * jQuery slider for images with mobile events support
@@ -143,8 +143,6 @@ $(document).ready(function () {
   });
 
   $('[data-global-filter-settings]').click(function (e) {
-    console.log($(e.target).closest('li').data('filter'));
-    console.log($(e.target).closest('li').children().length);
     var clickedLiClass = $(e.target).closest('a').attr('class');
     if ($(e.target).closest('li').children().length === 1) {
       $(e.target).closest('li').remove();
@@ -160,6 +158,6 @@ $(document).ready(function () {
    */
   $('[data-filter-reset]').click(function (e) {
     $('[data-selected-items], [data-global-filter-settings] li').empty();
-    $(document).trigger('testEvent', [1011]);
+    // $(document).trigger('testEvent', [1011]);
   });
 });
