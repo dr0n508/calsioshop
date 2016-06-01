@@ -1,10 +1,16 @@
 $(document).ready(function () {
 
   /**
+   * Custom event
+   */
+  $(document).on('testEvent', function(e, eventInfo) {
+    console.log('testEvent happend');
+  });
+
+  /**
    * jQuery slider for images with mobile events support
    */
   $('.bxslider').bxSlider();
-
 
   /**
    * jQuery UI slider widget
@@ -90,6 +96,9 @@ $(document).ready(function () {
    * get value of clicked inputs
    */
   $('.checkbox22').click(function (e) {
+    var str = $(this).parent().parent()[0].id;
+    var n = str.lastIndexOf('-');
+    var filterName = str.substring(n + 1);
     $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
     if ($(this).is(':checked')) {
       // add filter selected items fot appropriate filter
@@ -97,17 +106,25 @@ $(document).ready(function () {
         '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
       );
       // add filter selected items fot global filter view
-      $('[data-global-filter-settings]').append(
-        '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
-      );
+      if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
+        $('[data-global-filter-settings]').append(
+          '<li data-filter=' + filterName + '>' + filterName + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+          // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+        );
+      } else {
+        $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+          // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+          '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
+        );
+      }
+
     } else {
-      // remove filter selected items fot appropriate filter
+      // remove filter selected items for appropriate filter
       $( e.target ).closest('.panel').find('[data-selected-items]').find('.' + $(this).val()).remove();
       // remove filter selected items fot global filter view
       $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
     }
   });
-
 
   /**
    * Remove selected filter options
@@ -117,6 +134,7 @@ $(document).ready(function () {
     var clickedLiClass = $(e.target).closest('li').attr('class');
     //remove filter option from global filter list
     $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
+    console.log();
     // remove filter option from filter option list
     $(e.target).closest('li').remove();
     // uncheck filter option
@@ -125,10 +143,23 @@ $(document).ready(function () {
   });
 
   $('[data-global-filter-settings]').click(function (e) {
-    var clickedLiClass = $(e.target).closest('li').attr('class');
+    console.log($(e.target).closest('li').data('filter'));
+    console.log($(e.target).closest('li').children().length);
+    var clickedLiClass = $(e.target).closest('a').attr('class');
+    if ($(e.target).closest('li').children().length === 1) {
+      $(e.target).closest('li').remove();
+    }
     $('#filterAccordion').find('[data-selected-items]').find('.' + clickedLiClass).remove();
     $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
     $('#filterAccordion').find('input#' + clickedLiClass).attr('checked', false);
     $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+  });
+
+  /**
+   * Reset filter
+   */
+  $('[data-filter-reset]').click(function (e) {
+    $('[data-selected-items], [data-global-filter-settings] li').empty();
+    $(document).trigger('testEvent', [1011]);
   });
 });
