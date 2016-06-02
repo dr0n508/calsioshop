@@ -417,7 +417,26 @@ ul[data-global-filter-settings] li {
     display: block !important;
   }
 }
+/*************************************/
+.panel-title a {
+  display: block;
+  .fa {
+    float: right;
+  }
+  .fa.fa-minus {
+    display: none;
+  }
+}
 
+.panel-title a[aria-expanded="true"] {
+  .fa.fa-plus {
+    display: none;
+  }
+  .fa.fa-minus {
+    display: block !important;
+  }
+}
+/*****************/
 
 .list-group-submenu .list-group-item {
   padding: 10px 15px 10px 35px;

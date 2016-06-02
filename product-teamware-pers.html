@@ -28,8 +28,10 @@
             <div class="panel-heading" role="tab" id="retro-pers">
                 <h4 class="panel-title">
                     <a href="#" class="btn-back">Ritorno</a>
-                    <a role="button" data-toggle="collapse" data-parent="#inside-teamware-pers" href="#collapse-retro-pers" aria-expanded="true" aria-controls="collapseOne">
+                    <a role="button" class="btn-personalization-back" data-toggle="collapse" data-parent="#inside-teamware-pers" href="#collapse-retro-pers" aria-expanded="true" aria-controls="collapseOne">
                         Personalizzazione retro
+                        <span class="fa fa-plus"></span>
+                        <span class="fa fa-minus"></span>
                     </a>
                 </h4>
             </div>
@@ -43,8 +45,8 @@
                             <li><img src="images/teamwaer-for-slider.png" /></li>
                         </ul>
                     </section>
-                    <section class="select-color-pers clearfix">
-                        <h3 class="header-pers">01. Scelta Colore Personalizzazione
+                    <section class="pers-section select-color-pers clearfix">
+                        <h3>01. Scelta Colore Personalizzazione
                             (per tutte le maglie)</h3>
 
 
@@ -76,16 +78,16 @@
 
 
                     </section>
-                    <section class="select-symbol">
-                        <h3 class="header-pers">02. Scelta del Carattere (per tutte le maglie)</h3>
+                    <section class="pers-section select-symbol">
+                        <h3>02. Scelta del Carattere (per tutte le maglie)</h3>
                         <select name="select-symbol" id="">
                             <option value="symbol1">symbol1</option>
                             <option value="symbol2">symbol2</option>
                             <option value="symbol3">symbol3</option>
                         </select>
                     </section>
-                    <section class="select-number-name">
-                        <h3 class="header-pers">03. Inserisci Nomi e Numeri</h3>
+                    <section class="pers-section select-number-name">
+                        <h3>03. Inserisci Nomi e Numeri</h3>
                         <div class="header-table clearfix">
                             <p class="header-size-pers">Taglia</p>
                             <p class="header-number-pers">Num. +3€</p>
@@ -109,7 +111,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="header-back-personalisation">
+                    <section class="footer-back-personalisation">
                         <p>Costo Personalizzazione: <span class="sum-personalisation-back">43.2€</span></p>
                         <a href="#">Sconto quantità personalizzazione</a>
                         <a href="#" class="big-btn">
@@ -128,12 +130,102 @@
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#inside-teamware-pers" href="#collapse-fronte-pers" aria-expanded="false" aria-controls="collapseTwo">
                         Personalizzazione fronte
+                        <span class="fa fa-plus"></span>
+                        <span class="fa fa-minus"></span>
                     </a>
                 </h4>
             </div>
             <div id="collapse-fronte-pers" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pers">
                 <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    <section class="pers-section">
+                        <h3>
+                            01. Personalizza il fronte maglia con testo
+                            e/o un immagine (sponsor o logo)
+                        </h3>
+                        <div class="upload-logo1">
+                            <input id="logo1" type="file"/>
+                            <label for="logo1"> + € 3.50</label>
+                        </div>
+                        <div class="upload-logo2">
+                            <input id="logo3" type="file"/>
+                            <label for="logo3"> + € 2.50</label>
+                        </div>
+                        <p>Scegli un immagine in formato JPG o GIF e
+                            caricala. Costo personalizzazione € 6.00</p>
+                        <a class="btn-wide" href="#">Carica la tua immagine</a>
+                    </section>
+
+                    <section class="pers-section">
+                        <h3>
+                            02. Scelta Colore Personalizzazione
+                            (per tutte le maglie)
+                        </h3>
+                        <label for="">Carattere riga:</label>
+                        <select name="" id="">
+                            <option value="">option1</option>
+                            <option value="">option1</option>
+                            <option value="">option1</option>
+                        </select>
+
+                        <label for="">Grandezza:</label>
+                        <select name="" id="">
+                            <option value="">24</option>
+                            <option value="">36</option>
+                            <option value="">48</option>
+                        </select>
+                    </section>
+
+                    <section class="pers-section select-color-pers clearfix">
+                        <h3>
+                            03. Scelta Colore Personalizzazione
+                            (per tutte le maglie)
+                        </h3>
+
+                        <input class="checkbox22" type="radio" id="color-white" name="color" value="white"/>
+                        <label class="col-xs-2" for="color-white"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-black" name="color" value="black"/>
+                        <label class="col-xs-2" for="color-black"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-grey" name="color" value="grey"/>
+                        <label class="col-xs-2" for="color-grey"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-yellow" name="color" value="yellow"/>
+                        <label class="col-xs-2" for="color-yellow"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-orange" name="color" value="orange"/>
+                        <label class="col-xs-2" for="color-orange"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-blue" name="color" value="blue"/>
+                        <label class="col-xs-2" for="color-blue"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-darkblue" name="color" value="darkblue"/>
+                        <label class="col-xs-2" for="color-darkblue"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-dark" name="color" value="dark"/>
+                        <label class="col-xs-2" for="color-dark"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-purple" name="color" value="purple"/>
+                        <label class="col-xs-2" for="color-purple"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-red" name="color" value="red"/>
+                        <label class="col-xs-2" for="color-red"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-green" name="color" value="green"/>
+                        <label class="col-xs-2" for="color-green"><span></span></label>
+                        <input class="checkbox22" type="radio" id="color-brown" name="color" value="brown"/>
+                        <label class="col-xs-2" for="color-brown"><span></span></label>
+
+                    </section>
+
+                    <section class="footer-back-personalisation">
+                        <p>Costo Personalizzazione: <span class="sum-personalisation-back">43.2€</span></p>
+                        <a href="#">Sconto quantità personalizzazione</a>
+                        <a href="#" class="big-btn">
+                            Finalizzare e aggiungi al carrelo
+
+                        </a>
+
+                    </section>
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

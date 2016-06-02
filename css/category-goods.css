@@ -306,6 +306,20 @@ ul[data-global-filter-settings] li {
 .list-group-item[aria-expanded="true"] .fa.fa-minus {
   display: block !important; }
 
+/*************************************/
+.panel-title a {
+  display: block; }
+  .panel-title a .fa {
+    float: right; }
+  .panel-title a .fa.fa-minus {
+    display: none; }
+
+.panel-title a[aria-expanded="true"] .fa.fa-plus {
+  display: none; }
+.panel-title a[aria-expanded="true"] .fa.fa-minus {
+  display: block !important; }
+
+/*****************/
 .list-group-submenu .list-group-item {
   padding: 10px 15px 10px 35px; }
 
