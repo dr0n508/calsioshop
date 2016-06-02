@@ -246,43 +246,45 @@
 .persolanisation-teamware .slider-product {
   padding: 10px;
   border-bottom: 1px solid #ddd; }
-.persolanisation-teamware .select-color-pers label {
-  padding: 0 5px 10px 0; }
-  .persolanisation-teamware .select-color-pers label span {
-    display: block;
-    height: 42px;
-    border: solid 1px #ddd; }
-.persolanisation-teamware .select-color-pers label[for="color-white"] span {
-  background: #ffffff; }
-.persolanisation-teamware .select-color-pers label[for="color-black"] span {
-  background: #000000; }
-.persolanisation-teamware .select-color-pers label[for="color-grey"] span {
-  background: #c0c0c0; }
-.persolanisation-teamware .select-color-pers label[for="color-yellow"] span {
-  background: #fffc00; }
-.persolanisation-teamware .select-color-pers label[for="color-orange"] span {
-  background: #ff6501; }
-.persolanisation-teamware .select-color-pers label[for="color-blue"] span {
-  background: #53ccff; }
-.persolanisation-teamware .select-color-pers label[for="color-darkblue"] span {
-  background: #104caf; }
-.persolanisation-teamware .select-color-pers label[for="color-dark"] span {
-  background: #05102c; }
-.persolanisation-teamware .select-color-pers label[for="color-purple"] span {
-  background: #661620; }
-.persolanisation-teamware .select-color-pers label[for="color-red"] span {
-  background: #ea0001; }
-.persolanisation-teamware .select-color-pers label[for="color-green"] span {
-  background: #25b53a; }
-.persolanisation-teamware .select-color-pers label[for="color-brown"] span {
-  background: #d5b25e; }
-.persolanisation-teamware .select-color-pers .checkbox22:not(checked) {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  left: 50%; }
-.persolanisation-teamware .select-color-pers .checkbox22:checked + label span {
-  border: solid 3px #808080; }
+.persolanisation-teamware .select-color-pers {
+  padding: 10px 0 10px 10px; }
+  .persolanisation-teamware .select-color-pers label {
+    padding: 0 10px 10px 0; }
+    .persolanisation-teamware .select-color-pers label span {
+      display: block;
+      height: 42px;
+      border: solid 1px #ddd; }
+  .persolanisation-teamware .select-color-pers label[for="color-white"] span {
+    background: #ffffff; }
+  .persolanisation-teamware .select-color-pers label[for="color-black"] span {
+    background: #000000; }
+  .persolanisation-teamware .select-color-pers label[for="color-grey"] span {
+    background: #c0c0c0; }
+  .persolanisation-teamware .select-color-pers label[for="color-yellow"] span {
+    background: #fffc00; }
+  .persolanisation-teamware .select-color-pers label[for="color-orange"] span {
+    background: #ff6501; }
+  .persolanisation-teamware .select-color-pers label[for="color-blue"] span {
+    background: #53ccff; }
+  .persolanisation-teamware .select-color-pers label[for="color-darkblue"] span {
+    background: #104caf; }
+  .persolanisation-teamware .select-color-pers label[for="color-dark"] span {
+    background: #05102c; }
+  .persolanisation-teamware .select-color-pers label[for="color-purple"] span {
+    background: #661620; }
+  .persolanisation-teamware .select-color-pers label[for="color-red"] span {
+    background: #ea0001; }
+  .persolanisation-teamware .select-color-pers label[for="color-green"] span {
+    background: #25b53a; }
+  .persolanisation-teamware .select-color-pers label[for="color-brown"] span {
+    background: #d5b25e; }
+  .persolanisation-teamware .select-color-pers .checkbox22:not(checked) {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%; }
+  .persolanisation-teamware .select-color-pers .checkbox22:checked + label span {
+    border: solid 3px #808080; }
 .persolanisation-teamware .select-number-name ul li {
   margin-bottom: 10px; }
 .persolanisation-teamware .select-number-name .header-table {

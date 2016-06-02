@@ -329,8 +329,9 @@
     border-bottom: 1px solid #ddd;
   }
   .select-color-pers {
+    padding: 10px 0 10px 10px;
     label {
-      padding: 0 5px 10px 0;
+      padding: 0 10px 10px 0;
       span {
         display: block;
         height: 42px;
@@ -406,6 +407,7 @@
       float: left;
     }
   }
+
 }
 
 .pers-section {
