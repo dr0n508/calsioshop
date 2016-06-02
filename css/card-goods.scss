@@ -307,19 +307,143 @@
 /****************personalization-teamware**********/
 
 .persolanisation-teamware {
+  .panel .panel-heading {
+    .panel-title a {
+      text-align: center;
+      padding: 10px;
+      display: inline-block;
+    }
+    .btn-back {
+      border-right: solid 1px #ffffff;
+//      padding: 10px;
+    }
+  }
+
 .select-number-name {
-  .size-pers {
+  padding: 10px;
+  background: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+  .size-pers, .header-size-pers  {
     width: 20%;
     float: left;
+    text-align: center;
+    font-weight: 600;
   }
-  .number-pers{
+  .number-pers, .header-number-pers{
     width: 30%;
     float: left;
   }
-  .name-pers{
+  .name-pers, .header-name-pers{
     width: 50%;
     float: left;
   }
+  .header-table {
+    padding-bottom: 10px;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+
 
 }
+}
+
+.header-back-personalisation {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  .sum-personalisation-back {
+    font-weight: 600;
+  }
+  .big-btn {
+    margin: 10px 0;
+    span {
+      font-size: 12px;
+      display: block;
+    }
+  }
+}
+
+
+
+.persolanisation-teamware {
+  .panel-body {
+    padding: 0;
+  }
+  .slider-product {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .select-color-pers {
+    background: #f3f3f3;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+    label {
+      padding: 0 5px;
+      padding-bottom: 10px;
+      span {
+        display: block;
+        height: 42px;
+        border: solid 1px #ddd;
+      }
+    }
+    label[for="color-white"] span{
+      background: #ffffff;
+    }
+    label[for="color-black"] span{
+      background: #000000;
+    }
+    label[for="color-grey"] span{
+      background: #c0c0c0;
+    }
+    label[for="color-yellow"] span{
+      background: #fffc00;
+    }
+    label[for="color-orange"] span{
+      background: #ff6501;
+    }
+    label[for="color-blue"] span{
+      background: #53ccff;
+    }
+    label[for="color-darkblue"] span{
+      background: #104caf;
+    }
+    label[for="color-dark"] span{
+      background: #05102c;
+    }
+    label[for="color-purple"] span{
+      background: #661620;
+    }
+    label[for="color-red"] span{
+      background: #ea0001;
+    }
+    label[for="color-green"] span{
+      background: #25b53a;
+    }
+    label[for="color-brown"] span{
+      background: #d5b25e;
+    }
+    .checkbox22:not(checked) {
+      position: absolute;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+    }
+    .checkbox22:checked + label span {
+      border: solid 3px #808080;
+    }
+  }
+  .select-symbol {
+    background: #f3f3f3;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+
+.header-pers {
+  font-family: "mohavebold", sans-serif;
+  color: #054182;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
