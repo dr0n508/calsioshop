@@ -360,14 +360,31 @@
       text-align: center;
       font-weight: 600;
     }
+    .size-pers {
+      line-height: 35px;
+    }
 
     .number-pers, .header-number-pers{
-      width: 30%;
+      width: 25%;
       float: left;
+      input {
+        width: 100%;
+        padding: 5px;
+//        margin: 0 5px;
+
+      }
     }
     .name-pers, .header-name-pers{
       width: 50%;
       float: left;
+      input {
+        width: 100%;
+        padding: 5px;
+        margin: 0 10px;
+      }
+    }
+    .header-name-pers {
+      padding: 0 10px;
     }
   }
 

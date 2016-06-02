@@ -267,12 +267,23 @@
   float: left;
   text-align: center;
   font-weight: 600; }
+.persolanisation-teamware .select-number-name .size-pers {
+  line-height: 35px; }
 .persolanisation-teamware .select-number-name .number-pers, .persolanisation-teamware .select-number-name .header-number-pers {
-  width: 30%;
+  width: 25%;
   float: left; }
+  .persolanisation-teamware .select-number-name .number-pers input, .persolanisation-teamware .select-number-name .header-number-pers input {
+    width: 100%;
+    padding: 5px; }
 .persolanisation-teamware .select-number-name .name-pers, .persolanisation-teamware .select-number-name .header-name-pers {
   width: 50%;
   float: left; }
+  .persolanisation-teamware .select-number-name .name-pers input, .persolanisation-teamware .select-number-name .header-name-pers input {
+    width: 100%;
+    padding: 5px;
+    margin: 0 10px; }
+.persolanisation-teamware .select-number-name .header-name-pers {
+  padding: 0 10px; }
 
 .pers-section {
   background: #f3f3f3;
