@@ -199,6 +199,10 @@
   float: right; }
 .personalization-boots .input-personalization {
   padding: 10px; }
+  .personalization-boots .input-personalization input {
+    height: 35px;
+    padding: 5px;
+    width: 100%; }
 
 /****************personalization-teamware**********/
 .persolanisation-teamware .panel .panel-heading .panel-title a {

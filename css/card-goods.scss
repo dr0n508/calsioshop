@@ -257,6 +257,12 @@
   }
   .input-personalization {
     padding: 10px;
+    input {
+      height: 35px;
+      padding: 5px;
+      width: 100%;
+    }
+
   }
 }
 
