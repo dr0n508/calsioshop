@@ -1,0 +1,32 @@
+/*****slider-product*****/
+.slider-product .bxslider li img {
+  margin: 0 auto; }
+
+.bx-wrapper {
+  margin: 0 auto 40px;
+  padding: 10px 0; }
+  .bx-wrapper .bx-controls-direction a {
+    width: 9px;
+    height: 14px; }
+  .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-next:hover {
+    background-position: center; }
+  .bx-wrapper .bx-prev {
+    background: url("../images/slider-arrow-left.png") no-repeat center center; }
+  .bx-wrapper .bx-next {
+    background: url("../images/slider-arrow-right.png") no-repeat center center; }
+  .bx-wrapper .bx-viewport {
+    box-shadow: none !important;
+    border: none; }
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: none;
+  border: solid 1px #808080;
+  margin: 0 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; }
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #054182; }
+
+/*# sourceMappingURL=custom_slider.css.map */

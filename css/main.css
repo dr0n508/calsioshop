@@ -2,6 +2,9 @@
 @import url(variables.css);
 @import url(category-goods.css);
 @import url(card-goods.css);
+@import url(custom_inputs.css);
+@import url(custom_slider.css);
+@import url(price_slider.css);
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea, address {
   padding: 0;
   margin: 0;
@@ -12,8 +15,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "ralewayregular", sans-serif;
-  /*font-family: 'mohavebold', sans-serif */ }
+  font-family: "ralewayregular", sans-serif; }
 
 .panel {
   border: none; }
@@ -570,54 +572,6 @@ footer {
     footer .copyright p {
       color: #828589;
       font-size: 13px; }
-
-/******price-slider*/
-.wrap-slider {
-  padding: 20px 0; }
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  border: none !important;
-  background: #054180 !important;
-  border-radius: 50%; }
-
-.ui-slider .ui-slider-handle {
-  width: 25px !important;
-  height: 25px !important;
-  outline: none !important; }
-
-.ui-slider-horizontal {
-  height: 1px !important;
-  display: block;
-  border: none !important;
-  background: #000000 !important; }
-
-.ui-slider-horizontal .ui-slider-handle {
-  top: -0.7em !important; }
-
-.ui-widget-header {
-  background: #000000 !important; }
-
-.slider-range {
-  margin: 30px 0; }
-  .slider-range label {
-    width: 50%;
-    float: left; }
-    .slider-range label .wrap-input {
-      position: relative;
-      border: solid 1px #dcdcdc;
-      display: inline-block;
-      width: 50%;
-      padding: 5px 0 5px 10px; }
-      .slider-range label .wrap-input input {
-        border: none;
-        padding-left: 10px;
-        width: 100%;
-        display: inline-block; }
-      .slider-range label .wrap-input:before {
-        content: "\20AC";
-        position: absolute;
-        top: 5p;
-        left: 10px; }
 
 .db {
   display: block; }

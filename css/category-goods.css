@@ -377,38 +377,4 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
       .filter-personal-prefer .number-players .checkbox22:checked + label span {
         background: #f3f3f3; }
 
-/****custom-inputs*****/
-.select2-container .select2-container .select2-selection--single {
-  height: 35px !important;
-  border-radius: 0 !important; }
-
-.select2-container .select2-selection--single {
-  height: 35px !important; }
-
-.select2-results__option p {
-  padding: 0 !important;
-  width: 100%; }
-  .select2-results__option p span {
-    margin-right: 5px; }
-
-.select2-container--default .select2-selection--single {
-  border-radius: 0 !important; }
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-  line-height: 16px !important;
-  padding-left: 0 !important; }
-  .select2-container--default .select2-selection--single .select2-selection__rendered p span {
-    margin-right: 5px; }
-
-.select2-selection__arrow {
-  position: relative; }
-  .select2-selection__arrow .fa {
-    position: absolute;
-    padding: 9px;
-    top: 0;
-    right: 0; }
-
-.select2-results__options p {
-  width: 100% !important; }
-
 /*# sourceMappingURL=category-goods.css.map */
