@@ -282,6 +282,13 @@
     border: solid 1px #dddddd; }
 .persolanisation-teamware .select-number-name .header-name-pers {
   padding: 0 10px; }
+.persolanisation-teamware .upload-logo {
+  margin-bottom: 10px; }
+  .persolanisation-teamware .upload-logo input {
+    width: 70%;
+    padding: 5px;
+    margin: 0 10px;
+    border: solid 1px #dddddd; }
 
 .pers-section {
   background: #f3f3f3;

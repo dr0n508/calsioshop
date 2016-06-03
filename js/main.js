@@ -12,6 +12,10 @@ $(document).ready(function () {
    */
   $('.bxslider').bxSlider();
 
+//  $('#collapse-retro-pers').on('hidden.bs.collapse', function () {
+//      $('.bxslider').bxSlider();
+//  });
+
 
   $('.slider-recently-viewed').bxSlider({
       slideWidth: 128,
