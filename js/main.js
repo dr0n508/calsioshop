@@ -10,13 +10,21 @@ $(document).ready(function () {
   /**
    * jQuery slider for images with mobile events support
    */
-  $('.bxslider').bxSlider();
+  $('.bxslider').bxSlider({
+    onSliderLoad: function(){
+      // do funky JS stuff here
+      alert('Slider has finished loading. Click OK to continue!');
+    },
+    onSlideAfter: function(){
+      // do mind-blowing JS stuff here
+      alert('A slide has finished transitioning. Bravo. Click OK to continue!');
+    }
+  });
 
-//  $('#collapse-retro-pers').on('hidden.bs.collapse', function () {
-//      $('.bxslider').bxSlider();
-//  });
-
-
+   $('#collapse-retro-pers').on('shown.bs.collapse', function () {
+     console.log('collapse is opend');
+   });
+  
   $('.slider-recently-viewed').bxSlider({
       slideWidth: 128,
       minSlides: 2,
@@ -107,7 +115,16 @@ $(document).ready(function () {
       $('.filter-personal-prefer').addClass("db");
   });
 
-
+  /**
+   * Highlight basket after item added to it
+   */
+  function highlightBasket (){
+    console.log($('.number-goods').text()*1 > 0);
+    if ($('.number-goods').text()*1 > 0) {
+      $('.basket-button').addClass('active');
+    }
+  }
+  highlightBasket();
 
   $('b[role="presentation"]').hide();
   $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
@@ -127,6 +144,7 @@ $(document).ready(function () {
         '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
       );
       // add filter selected items fot global filter view
+      console.log($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0);
       if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
         $('[data-global-filter-settings]').append(
           '<li data-filter=' + filterName + '>' + filterName + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
@@ -155,7 +173,6 @@ $(document).ready(function () {
     var clickedLiClass = $(e.target).closest('li').attr('class');
     //remove filter option from global filter list
     $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
-    console.log();
     // remove filter option from filter option list
     $(e.target).closest('li').remove();
     // uncheck filter option
@@ -178,7 +195,9 @@ $(document).ready(function () {
    * Reset filter
    */
   $('[data-filter-reset]').click(function (e) {
-    $('[data-selected-items], [data-global-filter-settings] li').empty();
+    $('[data-selected-items]').empty();
+    $('[data-global-filter-settings]').text('Filtrare per: ');
+    $('.number-of-filters').html('Filtra (0)');
     // $(document).trigger('testEvent', [1011]);
   });
 });
