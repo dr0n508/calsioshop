@@ -240,9 +240,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   float: right;
   border: none;
   background: #f0f0f0;
-  //  margin: 0;
   padding: 8px 20px 8px 28px;
-  //  border-radius: 0;
   outline: none;
   -webkit-transform: skew(-30deg);
   -moz-transform: skew(-30deg);
@@ -273,17 +271,19 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
-.navbar-toggle[aria-expanded="true"] + .basket-button {
+.basket-button.active {
   background: #da2620;
   .ico-basket-white {
     display: inline-block;
+    vertical-align: top;
   }
   .ico-basket {
     display: none;
+    vertical-align: top;
   }
   .number-goods {
-    color: white;
-  }
+        color: white;
+      }
 }
 
 .benefit-bar {

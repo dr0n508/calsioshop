@@ -212,13 +212,15 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-family: "mohavebold", sans-serif;
       font-size: 16px; }
 
-.navbar-toggle[aria-expanded="true"] + .basket-button {
+.basket-button.active {
   background: #da2620; }
-  .navbar-toggle[aria-expanded="true"] + .basket-button .ico-basket-white {
-    display: inline-block; }
-  .navbar-toggle[aria-expanded="true"] + .basket-button .ico-basket {
-    display: none; }
-  .navbar-toggle[aria-expanded="true"] + .basket-button .number-goods {
+  .basket-button.active .ico-basket-white {
+    display: inline-block;
+    vertical-align: top; }
+  .basket-button.active .ico-basket {
+    display: none;
+    vertical-align: top; }
+  .basket-button.active .number-goods {
     color: white; }
 
 .benefit-bar {
