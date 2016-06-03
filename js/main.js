@@ -10,34 +10,29 @@ $(document).ready(function () {
   /**
    * jQuery slider for images with mobile events support
    */
-  $('.bxslider').bxSlider({
-    onSliderLoad: function(){
-      // do funky JS stuff here
-      alert('Slider has finished loading. Click OK to continue!');
-    },
-    onSlideAfter: function(){
-      // do mind-blowing JS stuff here
-      alert('A slide has finished transitioning. Bravo. Click OK to continue!');
-    }
+  $('.bxslider').bxSlider();
+  var frontePers = $('.bxslider-fronte').bxSlider();
+
+
+  $('#collapse-fronte-pers').on('shown.bs.collapse', function () {
+    console.log('SHOW #collapse-fronte-pers');
+    frontePers.reloadSlider();
   });
 
-   $('#collapse-retro-pers').on('shown.bs.collapse', function () {
-     console.log('collapse is opend');
-   });
-  
+
   $('.slider-recently-viewed').bxSlider({
-      slideWidth: 128,
-      minSlides: 2,
-      maxSlides: 3,
-      moveSlides: 1,
-      slideMargin: 10,
-      pager: false,
-      hideControlOnEnd: true,
-      infiniteLoop: false,
-      nextText: 'Vedi tutto <span class="fa fa-chevron-right" aria-hidden="true"></span>',
-      prevText: '<span class="fa fa-chevron-left" aria-hidden="true"></span> Prev',
-      nextSelector: '#slider-next',
-      prevSelector: '#slider-prev'
+    slideWidth: 128,
+    minSlides: 2,
+    maxSlides: 3,
+    moveSlides: 1,
+    slideMargin: 10,
+    pager: false,
+    hideControlOnEnd: true,
+    infiniteLoop: false,
+    nextText: 'Vedi tutto <span class="fa fa-chevron-right" aria-hidden="true"></span>',
+    prevText: '<span class="fa fa-chevron-left" aria-hidden="true"></span> Prev',
+    nextSelector: '#slider-next',
+    prevSelector: '#slider-prev'
   });
 
 
@@ -105,14 +100,14 @@ $(document).ready(function () {
   });
 
   $('.select2-size').select2({
-      minimumResultsForSearch: Infinity,
-      placeholder: "Seleziona una taglia"
+    minimumResultsForSearch: Infinity,
+    placeholder: "Seleziona una taglia"
   });
   $('.select2-brand').select2({
-      minimumResultsForSearch: Infinity,
-      placeholder: "Seleziona una marca"
+    minimumResultsForSearch: Infinity,
+    placeholder: "Seleziona una marca"
   }).on("change", function(e) {
-      $('.filter-personal-prefer').addClass("db");
+    $('.filter-personal-prefer').addClass("db");
   });
 
   /**
