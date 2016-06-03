@@ -310,4 +310,25 @@
       font-size: 12px;
       display: block; }
 
+.sliders-recently-popular .slide p span {
+  font-weight: 600; }
+.sliders-recently-popular .nav li {
+  width: 50%; }
+  .sliders-recently-popular .nav li a {
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    color: #054182;
+    text-align: center;
+    margin: 0; }
+.sliders-recently-popular .nav-tabs > li.active > a, .sliders-recently-popular .nav-tabs > li.active > a:focus, .sliders-recently-popular .nav-tabs > li.active > a:hover {
+  background: #f3f3f3; }
+.sliders-recently-popular .nav-tabs > li > a {
+  border-radius: 0; }
+.sliders-recently-popular .tab-content {
+  background: #f3f3f3; }
+  .sliders-recently-popular .tab-content .bx-viewport {
+    background: #f3f3f3;
+    padding-left: 10px; }
+
 /*# sourceMappingURL=card-goods.css.map */

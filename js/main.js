@@ -22,8 +22,8 @@ $(document).ready(function () {
       pager: false,
       hideControlOnEnd: true,
       infiniteLoop: false,
-      nextText: 'Vedi tutto <span class="fa fa-chevron-down" aria-hidden="true"></span>',
-      prevText: '<span class="fa fa-chevron-down" aria-hidden="true"></span>Prev',
+      nextText: 'Vedi tutto <span class="fa fa-chevron-right" aria-hidden="true"></span>',
+      prevText: '<span class="fa fa-chevron-left" aria-hidden="true"></span> Prev',
       nextSelector: '#slider-next',
       prevSelector: '#slider-prev'
   });

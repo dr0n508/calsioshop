@@ -29,6 +29,7 @@
   .bx-viewport {
     box-shadow: none !important;
     border: none;
+    position: static !important;
   }
 }
 
@@ -54,5 +55,22 @@
       display: block;
     }
 
+  }
+}
+
+.outside p {
+  background: #f3f3f3;
+  border-top: solid 1px #ffffff;
+}
+.outside #slider-prev, .outside #slider-next {
+  a {
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #054182;
+  }
+
+  .bx-prev.disabled, .bx-next.disabled  {
+    visibility: hidden;
   }
 }

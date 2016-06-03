@@ -420,3 +420,35 @@
 }
 
 
+.sliders-recently-popular {
+  .slide p span {
+    font-weight: 600;
+  }
+  .nav li {
+    width: 50%;
+    a {
+      font-family: "mohavebold", sans-serif;
+      font-size: 16px;
+      padding: 10px;
+      color: #054182;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background: #f3f3f3;
+  }
+  .nav-tabs>li>a {
+    border-radius: 0;
+  }
+  .tab-content {
+    background: #f3f3f3;
+    .bx-viewport {
+      background: #f3f3f3;
+      padding-left: 10px;
+//      position: static !important;
+    }
+  }
+}
+
+

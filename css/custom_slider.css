@@ -16,7 +16,8 @@
     background: url("../images/slider-arrow-right.png") no-repeat center center; }
   .bx-wrapper .bx-viewport {
     box-shadow: none !important;
-    border: none; }
+    border: none;
+    position: static !important; }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: none;
@@ -35,5 +36,17 @@
   text-align: center; }
   .outside p #slider-prev a, .outside p #slider-next a {
     display: block; }
+
+.outside p {
+  background: #f3f3f3;
+  border-top: solid 1px #ffffff; }
+
+.outside #slider-prev a, .outside #slider-next a {
+  font-family: "mohavebold", sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  color: #054182; }
+.outside #slider-prev .bx-prev.disabled, .outside #slider-prev .bx-next.disabled, .outside #slider-next .bx-prev.disabled, .outside #slider-next .bx-next.disabled {
+  visibility: hidden; }
 
 /*# sourceMappingURL=custom_slider.css.map */
