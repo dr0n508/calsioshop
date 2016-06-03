@@ -105,7 +105,7 @@
   margin-bottom: 5px;
   width: 100%;
   padding: 7px 0;
-  background: url("../images/logo-personalize.png") 95% 50% no-repeat, #054180;
+  background: #054180;
   color: #ffffff;
   display: block;
   text-align: center;
@@ -120,7 +120,7 @@
     font-size: 16px;
   }
   .free {
-    color: #c2d909;
+//    color: #c2d909;
     text-transform: uppercase;
   }
 }
@@ -212,12 +212,12 @@
       color: #ffffff;
     }
     .free {
-      color: #c2d909;
+//      color: #c2d909;
     }
     &:hover, &:focus {
       p, span {color: #ffffff}
       .free {
-        color: #c2d909;
+//        color: #c2d909;
       }
     }
   }

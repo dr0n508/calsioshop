@@ -83,7 +83,7 @@
   margin-bottom: 5px;
   width: 100%;
   padding: 7px 0;
-  background: url("../images/logo-personalize.png") 95% 50% no-repeat, #054180;
+  background: #054180;
   color: #ffffff;
   display: block;
   text-align: center;
@@ -96,7 +96,6 @@
     font-family: "mohavebold", sans-serif;
     font-size: 16px; }
   .personalize-btn .free {
-    color: #c2d909;
     text-transform: uppercase; }
 
 .big-btn {
@@ -167,12 +166,8 @@
   display: none; }
   .personalization-boots .personalize-btn p, .personalization-boots .personalize-btn span {
     color: #ffffff; }
-  .personalization-boots .personalize-btn .free {
-    color: #c2d909; }
   .personalization-boots .personalize-btn:hover p, .personalization-boots .personalize-btn:hover span, .personalization-boots .personalize-btn:focus p, .personalization-boots .personalize-btn:focus span {
     color: #ffffff; }
-  .personalization-boots .personalize-btn:hover .free, .personalization-boots .personalize-btn:focus .free {
-    color: #c2d909; }
 .personalization-boots .personalize-btn.collapsed {
   display: block; }
 .personalization-boots h2 a {

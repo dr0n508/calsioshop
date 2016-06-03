@@ -75,6 +75,21 @@
   }
 }
 
+.filtered-goods .filter-settings {
+  font-size: 12px;
+  a {
+    color: #5a5a5a;
+    display: inline-block;
+    margin-left: 10px;
+    .fa {
+      margin-right: 5px;
+      color: #2862a2;
+    }
+  }
+}
+
+
+
 .btn-wide {
   display: block;
   color: white;

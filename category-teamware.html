@@ -162,8 +162,15 @@
 
 </section>
 <section class="filtered-goods clearfix">
-    <a href="#" class="btn-wide">Acquista ScarpE CALCICO per CATEGORIE</a>
-    <a href="#" class="btn-wide">Filtra</a>
+
+    <a href="#" data-toggle="modal" data-target="#myModal2" class="btn-wide">Acquista ScarpE CALCICO per CATEGORIE</a>
+    <a href="#" data-toggle="modal" data-target="#myModal" class="btn-wide">Filtra</a>
+
+    <ul data-global-filter-settings class="filter-settings">
+        Filtrare per:
+        <!--insert here selected items from filter-->
+    </ul>
+
     <div class="order-filter clearfix">
         <div class="dropdown"><a id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn-order-filter dropdown-toggle">Ordina per novità<span class="fa fa-chevron-down"></span></a>
             <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
@@ -310,6 +317,320 @@
         <p>Free Time Management Group SLR © 2005 - 2016</p>
     </div>
 </footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <section class="filter-category-boots">
+                    <form action="#">
+                        <div class="header-filter clearfix">
+                            <p class="number-of-filters">Filtra (0)</p>
+                            <button type="submit" class="btn-apply">Applica</button>
+                            <button type="reset" class="btn-reset">Reset</button>
+                        </div>
+
+                        <div id="filterAccordion" role="tablist" aria-multiselectable="true" class="panel-group">
+                            <div class="panel panel-default">
+                                <div id="heading-marca" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-marca" aria-expanded="false" aria-controls="collapse-marca" class="collapsed">
+                                            Marca
+                                            <span class="fa fa-plus"></span>
+                                        </a>
+                                    </h4>
+
+                                    <ul data-selected-items>
+                                        <!--insert here selected items from filter-->
+                                    </ul>
+
+
+
+                                </div>
+                                <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse collapse-marca">
+                                    <div class="panel-body">
+                                        <input class="checkbox22" value="Asics" id="Asics" type="checkbox"/>
+                                        <label for="Asics"><span>Asics (44)</span></label>
+                                        <input class="checkbox22" value="Diadora" id="Diadora" type="checkbox"/>
+                                        <label for="Diadora"><span>Diadora (44)</span></label>
+                                        <input class="checkbox22" value="Gems" id="Gems" type="checkbox"/>
+                                        <label for="Gems"><span>Gems (44)</span></label>
+                                        <input class="checkbox22" value="Lotto" id="Lotto" type="checkbox"/>
+                                        <label for="Lotto"><span>Lotto (44)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div id="heading-taglia" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-taglia" aria-expanded="false" aria-controls="collapse-taglia" class="collapsed">
+                                            Taglia
+                                            <span class="fa fa-plus"></span>
+                                        </a>
+                                    </h4>
+                                    <ul data-selected-items>
+                                        <!--insert here selected items from filter-->
+                                    </ul>
+                                </div>
+                                <div id="collapse-taglia" role="tabpanel" aria-labelledby="heading-taglia" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                        <input class="checkbox22" id="27" value="27" type="checkbox"/>
+                                        <label for="27"><span>27</span></label>
+
+                                        <input class="checkbox22" id="28" value="28" type="checkbox"/>
+                                        <label for="28"><span>28</span></label>
+
+                                        <input class="checkbox22" id="30" value="30" type="checkbox"/>
+                                        <label for="30"><span>30</span></label>
+
+                                        <input class="checkbox22" id="31" value="31" type="checkbox"/>
+                                        <label for="31"><span>31</span></label>
+
+                                        <input class="checkbox22" id="49" value="49" type="checkbox"/>
+                                        <label for="49"><span>49</span></label>
+
+                                        <input class="checkbox22" id="40"  value="40" type="checkbox"/>
+                                        <label for="40"><span>40</span></label>
+
+                                        <input class="checkbox22" id="41" value="41" type="checkbox"/>
+                                        <label for="41"><span>41</span></label>
+
+                                        <input class="checkbox22" id="42" value="42" type="checkbox"/>
+                                        <label for="42"><span>42</span></label>
+
+                                        <input class="checkbox22" id="43" value="43" type="checkbox"/>
+                                        <label for="43"><span>43</span></label>
+
+                                        <input class="checkbox22" id="44" value="44" type="checkbox"/>
+                                        <label for="44"><span>44</span></label>
+
+                                        <input class="checkbox22" id="45" value="45" type="checkbox"/>
+                                        <label for="45"><span>45</span></label>
+
+                                        <input class="checkbox22" id="46" value="46" type="checkbox"/>
+                                        <label for="46"><span>46</span></label>
+
+                                        <input class="checkbox22" id="47" value="47" type="checkbox"/>
+                                        <label for="47"><span>47</span></label>
+
+                                        <input class="checkbox22" id="48" value="48" type="checkbox"/>
+                                        <label for="48"><span>48</span></label>
+
+                                        <input class="checkbox22" id="50" value="50" type="checkbox"/>
+                                        <label for="50"><span>50</span></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="heading-edizione" role="tab" class="panel-heading">
+                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-edizione" aria-expanded="false" aria-controls="collapse-edizione" class="collapsed">edizione<span class="fa fa-plus"></span></a></h4>
+                                </div>
+                                <div id="collapse-edizione" role="tabpanel" aria-labelledby="heading-edizione" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="heading-collezione" role="tab" class="panel-heading">
+                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-collezione" aria-expanded="false" aria-controls="collapse-collezione" class="collapsed">collezione<span class="fa fa-plus"></span></a></h4>
+                                </div>
+                                <div id="collapse-collezione" role="tabpanel" aria-labelledby="heading-collezione" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="heading-prezo" role="tab" class="panel-heading">
+                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-prezo" aria-expanded="false" aria-controls="collapse-prezo" class="collapsed">prezo<span class="fa fa-plus"></span></a></h4>
+                                </div>
+                                <div id="collapse-prezo" role="tabpanel" aria-labelledby="heading-prezo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <!--price-slider-->
+                                        <div class="wrap-slider">
+                                            <div id="slider"></div>
+                                            <div id="slider-range" class="slider-range">
+                                                <label for="minCost">Min
+                                                    <div class="wrap-input">
+                                                        <input type="text" id="minCost" value="0"/>
+                                                    </div>
+                                                </label>
+
+                                                <label for="maxCost">Max
+                                                    <div class="wrap-input">
+                                                        <input type="text" id="maxCost" value="1000"/>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-filter clearfix">
+                            <p class="number-of-filters">Filtra (0)</p>
+                            <button type="submit" class="btn-apply">Applica</button>
+                            <button type="reset" data-filter-reset class="btn-reset">Reset</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="header-filter clearfix">
+                    <p class="number-of-filters">Acquista Attrezzature per <br/>
+                        Categorie</p>
+                    <!--<button type="submit" class="btn-apply">Applica</button>-->
+                    <button type="reset" class="btn-reset">Chiudi</button>
+                </div>
+
+
+
+                <div id="equipment-categories">
+                    <div class="list-group panel">
+
+                        <a href="#for-training" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            ALLENAMENTO E GARA
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="for-training">
+                            <a href="#" class="list-group-item">Cronometri</a>
+                            <a href="#" class="list-group-item">Delimitatori e pali</a>
+                            <a href="#" class="list-group-item">Fischietti</a>
+                            <a href="#" class="list-group-item">Lavagne</a>
+                            <a href="#" class="list-group-item">Miniball</a>
+                            <a href="#" class="list-group-item">Ostacoli</a>
+
+                            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Palloni
+                                <span class="fa fa-plus"></span>
+                                <span class="fa fa-minus"></span>
+                            </a>
+
+
+                            <div class="collapse list-group-submenu" id="SubMenu1">
+                                <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Palloni Calcio N.5
+                                    <span class="fa fa-plus"></span>
+                                    <span class="fa fa-minus"></span>
+                                </a>
+                                <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubMenu1">
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Erba Sintetica</a>
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Gara</a>
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Terreni Duri</a>
+                                </div>
+
+                                <a href="#SubSubMenu2" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">
+                                    Palloni Calcio N.4
+                                    <span class="fa fa-plus"></span>
+                                    <span class="fa fa-minus"></span>
+                                </a>
+                                <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubMenu2">
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Erba Sintetica</a>
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Gara</a>
+                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Terreni Duri</a>
+                                </div>
+
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Palloni Calcetto</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Beach Soccer</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Palle Mediche</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Palloni Allenamento</a>
+
+
+                            </div>
+
+                            <a href="#" class="list-group-item">Cerchi</a>
+                            <a href="#" class="list-group-item">Porte e Retri</a>
+                            <a href="#" class="list-group-item">Sagome per Barriera</a>
+                            <a href="#" class="list-group-item">Scallete Skip</a>
+                            <a href="#" class="list-group-item">Segnacampo</a>
+                            <a href="#" class="list-group-item">Sostituzione Giocatori</a>
+
+                        </div>
+
+                        <a href="#for-players" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            ATTREZATURE PER GIOCATORI
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="for-players">
+                            <a href="" class="list-group-item">Subitem 1</a>
+                            <a href="" class="list-group-item">Subitem 2</a>
+                            <a href="" class="list-group-item">Subitem 3</a>
+                        </div>
+
+                        <a href="#accessories" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            ACCESSORI
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="accessories">
+                            <a href="" class="list-group-item">Subitem 1</a>
+                            <a href="" class="list-group-item">Subitem 2</a>
+                            <a href="" class="list-group-item">Subitem 3</a>
+                        </div>
+
+                        <a href="#medical-equipment" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            ATTREZZATURA MEDICA
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="medical-equipment">
+                            <a href="" class="list-group-item">Subitem 1</a>
+                            <a href="" class="list-group-item">Subitem 2</a>
+                            <a href="" class="list-group-item">Subitem 3</a>
+                        </div>
+
+                        <a href="#judge-accessories" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            judge accessories
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="judge-accessories">
+                            <a href="" class="list-group-item">Subitem 1</a>
+                            <a href="" class="list-group-item">Subitem 2</a>
+                            <a href="" class="list-group-item">Subitem 3</a>
+                        </div>
+
+                        <a href="#sale" class="list-group-item main-item" data-toggle="collapse" data-parent="#equipment-categories">
+                            SCONTO QUANTITA
+                            <span class="fa fa-plus"></span>
+                            <span class="fa fa-minus"></span>
+                        </a>
+
+                        <div class="collapse" id="sale">
+                            <a href="" class="list-group-item">Subitem 1</a>
+                            <a href="" class="list-group-item">Subitem 2</a>
+                            <a href="" class="list-group-item">Subitem 3</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 

@@ -58,6 +58,16 @@
         margin-right: 5px;
         color: #2862a2; }
 
+.filtered-goods .filter-settings {
+  font-size: 12px; }
+  .filtered-goods .filter-settings a {
+    color: #5a5a5a;
+    display: inline-block;
+    margin-left: 10px; }
+    .filtered-goods .filter-settings a .fa {
+      margin-right: 5px;
+      color: #2862a2; }
+
 .btn-wide {
   display: block;
   color: white;
