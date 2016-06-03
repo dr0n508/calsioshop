@@ -12,6 +12,23 @@ $(document).ready(function () {
    */
   $('.bxslider').bxSlider();
 
+
+  $('.slider-recently-viewed').bxSlider({
+      slideWidth: 128,
+      minSlides: 2,
+      maxSlides: 3,
+      moveSlides: 1,
+      slideMargin: 10,
+      pager: false,
+      hideControlOnEnd: true,
+      infiniteLoop: false,
+      nextText: 'Vedi tutto <span class="fa fa-chevron-down" aria-hidden="true"></span>',
+      prevText: '<span class="fa fa-chevron-down" aria-hidden="true"></span>Prev',
+      nextSelector: '#slider-next',
+      prevSelector: '#slider-prev'
+  });
+
+
   /**
    * jQuery UI slider widget
    * Drag a handle to select a numeric value.

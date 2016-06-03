@@ -25,6 +25,7 @@
 
 .select2-container--default .select2-selection--single {
   border-radius: 0!important;
+  border: 1px solid #dddddd !important;
 }
 
 
@@ -43,6 +44,8 @@ span[aria-labelledby="select2-color-container"] {
   }
   }
 }
+
+//.select2-container--default .select2-selection--single
 
 .select2-selection__arrow {
   position: relative;

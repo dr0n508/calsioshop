@@ -261,6 +261,7 @@
       height: 35px;
       padding: 5px;
       width: 100%;
+      border: solid 1px #dddddd;
     }
 
   }
@@ -349,7 +350,7 @@
   }
   .select-number-name {
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .header-table {
       padding-bottom: 10px;
@@ -370,8 +371,7 @@
       input {
         width: 100%;
         padding: 5px;
-//        margin: 0 5px;
-
+        border: solid 1px #dddddd;
       }
     }
     .name-pers, .header-name-pers{
@@ -381,6 +381,7 @@
         width: 100%;
         padding: 5px;
         margin: 0 10px;
+        border: solid 1px #dddddd;
       }
     }
     .header-name-pers {

@@ -54,24 +54,22 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-size: 16px;
     margin-right: 5px; }
 
-.nav li {
-  float: none; }
-  .nav li a[aria-expanded="true"] span {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    /* ╨┐╨╛╨▓╨╛╤А╨░╤З╨╕╨▓╨░╨╡╨╝ ╤Д╨╕╨│╤Г╤А╤Г ╨╜╨░ 45 ╨│╤А╨░╨┤╤Г╤Б╨╛╨▓ */
-    transition: transform 0.5s; }
-  .nav li a[aria-expanded="false"] span {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    /* ╨┐╨╛╨▓╨╛╤А╨░╤З╨╕╨▓╨░╨╡╨╝ ╤Д╨╕╨│╤Г╤А╤Г ╨╜╨░ 45 ╨│╤А╨░╨┤╤Г╤Б╨╛╨▓ */
-    transition: transform 0.5s; }
+.nav li a[aria-expanded="true"] span {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  /* ╨┐╨╛╨▓╨╛╤А╨░╤З╨╕╨▓╨░╨╡╨╝ ╤Д╨╕╨│╤Г╤А╤Г ╨╜╨░ 45 ╨│╤А╨░╨┤╤Г╤Б╨╛╨▓ */
+  transition: transform 0.5s; }
+.nav li a[aria-expanded="false"] span {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /* ╨┐╨╛╨▓╨╛╤А╨░╤З╨╕╨▓╨░╨╡╨╝ ╤Д╨╕╨│╤Г╤А╤Г ╨╜╨░ 45 ╨│╤А╨░╨┤╤Г╤Б╨╛╨▓ */
+  transition: transform 0.5s; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #eeeeee; }

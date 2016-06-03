@@ -20,9 +20,11 @@
 
   .bx-prev {
     background: url("../images/slider-arrow-left.png") no-repeat center center;
+//    background: none;
   }
   .bx-next {
     background: url("../images/slider-arrow-right.png") no-repeat center center;
+//    background: none;
   }
   .bx-viewport {
     box-shadow: none !important;
@@ -41,4 +43,16 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #054182;
+}
+
+.outside p {
+  #slider-prev, #slider-next {
+    width: 50%;
+    float: left;
+    text-align: center;
+    a {
+      display: block;
+    }
+
+  }
 }

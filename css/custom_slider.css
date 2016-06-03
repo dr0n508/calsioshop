@@ -29,4 +29,11 @@
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #054182; }
 
+.outside p #slider-prev, .outside p #slider-next {
+  width: 50%;
+  float: left;
+  text-align: center; }
+  .outside p #slider-prev a, .outside p #slider-next a {
+    display: block; }
+
 /*# sourceMappingURL=custom_slider.css.map */
