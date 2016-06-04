@@ -128,7 +128,7 @@
     <h1>Modalità di spedizione</h1>
 
 </section>
-<section class="delivery-data checkout">
+<section class="delivery-data checkout classic-section">
     <h2>Spediremo la merce a questo indirizzo</h2>
     <p class="deliveri-adress">Giovanni Doe </p>
     <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
@@ -136,30 +136,53 @@
     <p class="info-text">Se l'indirizzo di consegna non ė corretto modificalo <a href="#">cliccando qui</a></p>
 </section>
 <form action="#">
-    <section class="delivery-method checkout">
+    <section class="delivery-method checkout classic-section">
         <h2>Modalità di spedizione</h2>
         <p>Scegli il tuo corriere preferito:</p>
-        <input type="radio" name="delivery-method" value="SDA" id="SDA"/>
-        <label for="SDA">SDA Express Courier ($6.90)</label>
-        <input type="radio" name="delivery-method" value="TNT" id="TNT"/>
-        <label for="TNT">TNT Global Express (€ 6.90)</label>
-        <input type="radio" name="delivery-method" value="BRT" id="BRT"/>
-        <label for="BRT">BRT Corriere Espresso (€ 6.90)</label>
+        <ul>
+            <li>
+                <input type="radio" name="delivery-method" value="SDA" id="SDA" checked/>
+                <label for="SDA">SDA Express Courier ($6.90)</label>
+            </li>
+            <li>
+                <input type="radio" name="delivery-method" value="TNT" id="TNT"/>
+                <label for="TNT">TNT Global Express (€ 6.90)</label>
+            </li>
+            <li>
+                <input type="radio" name="delivery-method" value="BRT" id="BRT"/>
+                <label for="BRT">BRT Corriere Espresso (€ 6.90)</label>
+            </li>
+        </ul>
+
+
+
 
     </section>
-    <section class="payment-method checkout">
+    <section class="payment-method checkout classic-section">
         <h2>Modalità di pagamento</h2>
         <p>Scegli una modalità di pagamento:</p>
-        <input type="radio" name="payment-method" value="Contrassegno" id="Contrassegno"/>
-        <label for="Contrassegno">Contrassegno</label>
-        <input type="radio" name="payment-method" value="Paypal" id="Paypal"/>
-        <label for="Paypal">Paypal</label>
-        <input type="radio" name="payment-method" value="credit-card" id="credit-card"/>
-        <label for="credit-card">Carta di credito</label>
-        <input type="radio" name="payment-method" value="Transfer" id="Transfer"/>
-        <label for="Transfer">Bonifico</label>
-        <input type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
-        <label for="bank-transfer">Bonifico bancario diretto (Sofort)</label>
+        <ul>
+            <li>
+                <input type="radio" name="payment-method" value="Contrassegno" id="Contrassegno"/>
+                <label for="Contrassegno">Contrassegno</label>
+            </li>
+            <li>
+                <input type="radio" name="payment-method" value="Paypal" id="Paypal"/>
+                <label for="Paypal">Paypal</label>
+            </li>
+            <li>
+                <input type="radio" name="payment-method" value="credit-card" id="credit-card"/>
+                <label for="credit-card">Carta di credito</label>
+            </li>
+            <li>
+                <input type="radio" name="payment-method" value="Transfer" id="Transfer"/>
+                <label for="Transfer">Bonifico</label>
+            </li>
+            <li>
+                <input type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
+                <label for="bank-transfer">Bonifico bancario diretto (Sofort)</label>
+            </li>
+        </ul>
     </section>
 
 

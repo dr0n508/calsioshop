@@ -755,6 +755,20 @@ footer {
   }
 }
 
+.delivery-method, .payment-method {
+  label {
+    position: relative;
+    top: -4px;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 600;
+  }
+  ul li {
+    margin: 5px 0;
+  }
+}
+
 .to-basket-section {
   .total-price {
     font-family: "mohavebold",sans-serif;

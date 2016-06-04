@@ -632,6 +632,15 @@ footer {
     font-family: "mohavebold", sans-serif;
     margin: 5px 0; }
 
+.delivery-method label, .payment-method label {
+  position: relative;
+  top: -4px;
+  font-weight: 400; }
+.delivery-method p, .payment-method p {
+  font-weight: 600; }
+.delivery-method ul li, .payment-method ul li {
+  margin: 5px 0; }
+
 .to-basket-section .total-price {
   font-family: "mohavebold",sans-serif;
   font-size: 16px; }
