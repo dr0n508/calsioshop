@@ -107,7 +107,7 @@
                 <span>Tuo Dati</span>
             </a>
         </li>
-        <li class="delivery-pay">
+        <li class="delivery-pay active">
             <a href="#">
                 <span>Spedizione e Pagamento</span>
             </a>
@@ -124,72 +124,50 @@
         </li>
     </ul>
 </div>
-<section class="welcome-section-checkout checkout">
-    <h1>Inserisci i tuoi dati</h1>
-    <p class="info-text">Se hai già acquistato su Calcioshop.it e ricordi la tua password puoi effettuare il login <a href="#">cliccando qui</a></p>
+<section class="welcome-section-checkout">
+    <h1>Modalità di spedizione</h1>
+
 </section>
-<section class="payment-data checkout">
-    <h2>Indirizzo di fatturazione</h2>
-    <form action="#">
-        <label for="who-client">Sono un:</label>
-        <select class="select2-brand form-control" name="who-client" id="who-client">
-            <option value="private">Privato</option>
-            <option value="corporation">Corporation</option>
-        </select>
-        
-        <label for="name-client">Nome</label>
-        <input id="name-client" type="text"/>
-
-        <label for="last-name-client">Cognome</label>
-        <input id="last-name-client" type="text"/>
-
-        <label for="country-client">Nazione</label>
-        <select class="select2-brand form-control" name="country-client" id="country-client">
-            <option value="Italia">Italia</option>
-            <option value="USA">USA</option>
-        </select>
-
-        <label for="adress-client">Indirizzo</label>
-        <input id="adress-client" type="text"/>
-
-        <label for="city-client">Città</label>
-        <input id="city-client" type="text"/>
-
-        <label for="state-client">Provincia</label>
-        <select class="select2-brand form-control" name="state-client" id="state-client">
-            <option></option>
-            <option value="state1">state1</option>
-            <option value="state1">state1</option>
-            <option value="state1">state1</option>
-        </select>
-
-        <label for="postal-code">Codice postale</label>
-        <input id="postal-code" type="number"/>
-
-        <label for="phone-client">Telefono</label>
-        <input id="phone-client" type="tel"/>
-
-        <label for="second-phone-client">Cellulare (opzionale)</label>
-        <input id="second-phone-client" type="tel"/>
-
-        <label for="email-client">E-mail</label>
-        <input id="email-client" type="email"/>
-
-        <div class="wrap-checkbox">
-            <input id="create-login" type="checkbox"/>
-            <label for="create-login">Crea un account per questo indirizzo email</label>
-        </div>
-
-        <div class="wrap-checkbox">
-            <input id="delivery-another-adress" type="checkbox"/>
-            <label for="delivery-another-adress">Spedisci a un indirizzo diverso</label>
-        </div>
-    </form>
+<section class="delivery-data checkout">
+    <h2>Spediremo la merce a questo indirizzo</h2>
+    <p class="deliveri-adress">Giovanni Doe </p>
+    <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
+    <p class="deliveri-adress">20149, Milan, Italy</p>
+    <p class="info-text">Se l'indirizzo di consegna non ė corretto modificalo <a href="#">cliccando qui</a></p>
 </section>
+<form action="#">
+    <section class="delivery-method checkout">
+        <h2>Modalità di spedizione</h2>
+        <p>Scegli il tuo corriere preferito:</p>
+        <input type="radio" name="delivery-method" value="SDA" id="SDA"/>
+        <label for="SDA">SDA Express Courier ($6.90)</label>
+        <input type="radio" name="delivery-method" value="TNT" id="TNT"/>
+        <label for="TNT">TNT Global Express (€ 6.90)</label>
+        <input type="radio" name="delivery-method" value="BRT" id="BRT"/>
+        <label for="BRT">BRT Corriere Espresso (€ 6.90)</label>
+
+    </section>
+    <section class="payment-method checkout">
+        <h2>Modalità di pagamento</h2>
+        <p>Scegli una modalità di pagamento:</p>
+        <input type="radio" name="payment-method" value="Contrassegno" id="Contrassegno"/>
+        <label for="Contrassegno">Contrassegno</label>
+        <input type="radio" name="payment-method" value="Paypal" id="Paypal"/>
+        <label for="Paypal">Paypal</label>
+        <input type="radio" name="payment-method" value="credit-card" id="credit-card"/>
+        <label for="credit-card">Carta di credito</label>
+        <input type="radio" name="payment-method" value="Transfer" id="Transfer"/>
+        <label for="Transfer">Bonifico</label>
+        <input type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
+        <label for="bank-transfer">Bonifico bancario diretto (Sofort)</label>
+    </section>
+
+
+</form>
+
 <section class="confirm-section">
     <a href="#" class="big-btn">
-        Conferma e Procedi »
-        <span>(potrai modificare i dati più avanti)</span>
+        Proseguire a Riepilogo Ordine »
     </a>
 </section>
 <section class="advantages-footer">
