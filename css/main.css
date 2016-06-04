@@ -654,6 +654,9 @@ footer {
   .checkout .price-quantity li .value-price-quantity {
     font-size: 16px;
     font-family: "mohavebold", sans-serif; }
+  .checkout .price-quantity li input[type="number"] {
+    width: 80%;
+    padding: 5px; }
 .checkout .sale-section p {
   width: 75%;
   float: left;
@@ -794,6 +797,24 @@ footer {
       .advantages-footer .review .wrap-img img {
         max-width: 100%;
         height: auto; }
+
+.list-payment-method li {
+  padding: 0 1px; }
+  .list-payment-method li a {
+    height: 30px;
+    display: block; }
+.list-payment-method .visa {
+  background: url("../images/visa-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method .american-express {
+  background: url("../images/american-express-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method .master-card {
+  background: url("../images/mastercard-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method .paypal {
+  background: url("../images/paypal-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method .transfer {
+  background: url("../images/transfer-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method .bank-transfer {
+  background: url("../images/banktransfer-ico.jpg") 50% 50% no-repeat; }
 
 .classic-section {
   background: #f3f3f3;

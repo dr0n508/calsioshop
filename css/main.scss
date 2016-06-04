@@ -785,6 +785,10 @@ footer {
         font-size: 16px;
         font-family: "mohavebold", sans-serif;
       }
+      input[type="number"] {
+        width: 80%;
+        padding: 5px;
+      }
     }
   }
   .sale-section {
@@ -967,6 +971,35 @@ footer {
       }
 
     }
+  }
+}
+
+.list-payment-method {
+  li {
+    padding: 0 1px;
+    a {
+      height: 30px;
+//      background: #ff6501;
+      display: block;
+    }
+  }
+  .visa {
+    background: url("../images/visa-ico.jpg") 50% 50% no-repeat;
+  }
+  .american-express {
+    background: url("../images/american-express-ico.jpg") 50% 50% no-repeat;
+  }
+  .master-card {
+    background: url("../images/mastercard-ico.jpg") 50% 50% no-repeat;
+  }
+  .paypal {
+    background: url("../images/paypal-ico.jpg") 50% 50% no-repeat;
+  }
+  .transfer {
+    background: url("../images/transfer-ico.jpg") 50% 50% no-repeat;
+  }
+  .bank-transfer {
+    background: url("../images/banktransfer-ico.jpg") 50% 50% no-repeat;
   }
 }
 
