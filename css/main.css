@@ -626,11 +626,51 @@ footer {
 
 .welcome-section-checkout {
   padding: 10px;
-  border-bottom: solid 1px #f3f3f3; }
+  border-bottom: solid 1px #dddddd; }
   .welcome-section-checkout h1 {
     font-size: 29px;
     font-family: "mohavebold", sans-serif;
     margin: 5px 0; }
+
+.to-basket-section .total-price {
+  font-family: "mohavebold",sans-serif;
+  font-size: 16px; }
+.to-basket-section .total-price-value {
+  font-family: "mohavebold",sans-serif;
+  font-size: 25px; }
+.to-basket-section .big-btn {
+  margin-top: 10px; }
+
+.image-goods {
+  text-align: center; }
+  .image-goods img {
+    max-width: 100%;
+    height: auto; }
+
+.product-specifications .wrap-specifications {
+  width: 70%; }
+  .product-specifications .wrap-specifications .name-goods {
+    font-family: "mohavebold",sans-serif;
+    font-size: 16px; }
+.product-specifications .modificate-section {
+  margin-top: 10px; }
+  .product-specifications .modificate-section p {
+    color: #00af35;
+    font-weight: 600; }
+
+.add-basket-message p {
+  position: relative;
+  padding: 0 0 0 30px; }
+  .add-basket-message p:before {
+    content: "";
+    background: url("../images/check-arrow-green.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px; }
 
 .checkout h2 {
   font-family: "mohavebold", sans-serif;
@@ -671,6 +711,11 @@ footer {
   font-weight: 600; }
   .total-info p span {
     float: right; }
+.total-info .gray, .total-info .lightgrey {
+  color: #636363;
+  text-align: center; }
+.total-info .lightgrey {
+  font-weight: 400; }
 .total-info .total-price {
   font-family: "mohavebold", sans-serif;
   font-size: 25px; }
@@ -798,23 +843,25 @@ footer {
         max-width: 100%;
         height: auto; }
 
-.list-payment-method li {
-  padding: 0 1px; }
-  .list-payment-method li a {
-    height: 30px;
-    display: block; }
-.list-payment-method .visa {
-  background: url("../images/visa-ico.jpg") 50% 50% no-repeat; }
-.list-payment-method .american-express {
-  background: url("../images/american-express-ico.jpg") 50% 50% no-repeat; }
-.list-payment-method .master-card {
-  background: url("../images/mastercard-ico.jpg") 50% 50% no-repeat; }
-.list-payment-method .paypal {
-  background: url("../images/paypal-ico.jpg") 50% 50% no-repeat; }
-.list-payment-method .transfer {
-  background: url("../images/transfer-ico.jpg") 50% 50% no-repeat; }
-.list-payment-method .bank-transfer {
-  background: url("../images/banktransfer-ico.jpg") 50% 50% no-repeat; }
+.list-payment-method {
+  margin: 10px 0; }
+  .list-payment-method li {
+    padding: 0 1px; }
+    .list-payment-method li a {
+      height: 30px;
+      display: block; }
+  .list-payment-method .visa {
+    background: url("../images/visa-ico.jpg") 50% 50% no-repeat; }
+  .list-payment-method .american-express {
+    background: url("../images/american-express-ico.jpg") 50% 50% no-repeat; }
+  .list-payment-method .master-card {
+    background: url("../images/mastercard-ico.jpg") 50% 50% no-repeat; }
+  .list-payment-method .paypal {
+    background: url("../images/paypal-ico.jpg") 50% 50% no-repeat; }
+  .list-payment-method .transfer {
+    background: url("../images/transfer-ico.jpg") 50% 50% no-repeat; }
+  .list-payment-method .bank-transfer {
+    background: url("../images/banktransfer-ico.jpg") 50% 50% no-repeat; }
 
 .classic-section {
   background: #f3f3f3;

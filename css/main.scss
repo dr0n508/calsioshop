@@ -746,11 +746,67 @@ footer {
 
 .welcome-section-checkout {
   padding: 10px;
-  border-bottom: solid 1px #f3f3f3;
+  border-bottom: solid 1px #dddddd;
+//  border-top: solid 1px #dddddd;
   h1 {
     font-size: 29px;
     font-family: "mohavebold", sans-serif;
     margin: 5px 0;
+  }
+}
+
+.to-basket-section {
+  .total-price {
+    font-family: "mohavebold",sans-serif;
+    font-size: 16px;
+  }
+  .total-price-value {
+    font-family: "mohavebold",sans-serif;
+    font-size: 25px;
+  }
+  .big-btn {
+    margin-top: 10px;
+  }
+}
+
+.image-goods {
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.product-specifications {
+  .wrap-specifications {
+    width: 70%;
+    .name-goods {
+      font-family: "mohavebold",sans-serif;
+      font-size: 16px;
+    }
+  }
+  .modificate-section {
+    margin-top: 10px;
+    p {
+      color: #00af35;
+      font-weight: 600;
+    }
+  }
+}
+
+.add-basket-message p {
+  position: relative;
+  padding: 0 0 0 30px;
+  &:before {
+    content: "";
+    background: url("../images/check-arrow-green.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
   }
 }
 
@@ -811,6 +867,13 @@ footer {
     span {
       float: right;
     }
+  }
+  .gray, .lightgrey {
+    color: #636363;
+    text-align: center;
+  }
+  .lightgrey {
+    font-weight: 400;
   }
   .total-price {
     font-family: "mohavebold", sans-serif;
@@ -975,6 +1038,7 @@ footer {
 }
 
 .list-payment-method {
+  margin: 10px 0;
   li {
     padding: 0 1px;
     a {
