@@ -754,10 +754,135 @@ footer {
     border: solid 1px #dddddd;
   }
   label {
-    margin: 5px 0;
+    margin: 5px 0 2px;
+    font-weight: 400;
+  }
+  .wrap-checkbox {
+    position: relative;
+    margin: 8px 0;
+    label {
+      font-size: 12px !important;
+      margin-left: 30px;
+    }
+    input[type=checkbox] {
+      display: none;
+    }
+    label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      border: solid 1px #dddddd;
+      background: #ffffff;
+    }
+    input[type=checkbox]:checked + label:before {
+      content: "\2714";
+      font-size: 20px;
+      color: #054182;
+      text-align: center;
+      line-height: 15px;
+    }
   }
 }
 
+.confirm-section {
+  padding: 10px !important;
+  border-top: solid 1px #dddddd;
+  border-bottom: solid 1px #dddddd;
+  .big-btn {
+    span {
+      text-align: center;
+      display: block;
+      font-size: 12px;
+    }
+  }
+}
+
+.advantages-footer {
+  background: #f3f3f3;
+  .wrap-advantages-footer {
+    border-bottom: solid 1px #dddddd;
+    overflow: hidden;
+    .safe-deal {
+      padding: 10px 5px 10px 50px;
+      width: 42%;
+      float: left;
+//      background: url("../images/ico-lock.png") no-repeat 7% 35%;
+      position: relative;
+      p {
+        font-size: 12px;
+        min-height: 70px;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 34px;
+          height: 39px;
+          display: block;
+          background: url("../images/ico-lock.png") no-repeat 50% 50%;
+          top: 20px;
+          left: 10px;
+        }
+      }
+
+    }
+    .experience {
+      background: #e6e6e6;
+      position: relative;
+      border-left: solid 1px #dddddd;
+      padding: 10px 10px 10px 50px;
+      width: 58%;
+      float: left;
+      left: 25px;
+      -webkit-transform: skew(-30deg);
+      -moz-transform: skew(-30deg);
+      -o-transform: skew(-30deg);
+      transform: skew(-30deg);
+      p {
+        font-size: 12px;
+        min-height: 70px;
+        padding: 0 15px;
+        -webkit-transform: skew(30deg);
+        -moz-transform: skew(30deg);
+        -o-transform: skew(30deg);
+        transform: skew(30deg);
+        &:before {
+          position: absolute;
+          content: "";
+          width: 34px;
+          height: 39px;
+          display: block;
+          background: url("../images/ico-custom-order.png") no-repeat 50% 50%;
+          top: 10px;
+          left: -28px;
+        }
+      }
+    }
+  }
+  .review {
+    padding: 10px;
+    overflow: hidden;
+    p {
+      width: 50%;
+      float: left;
+      font-size: 12px;
+      padding: 30px 10px;
+    }
+    .wrap-img {
+      width: 50%;
+      float: right;
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+    }
+  }
+}
 
 
 

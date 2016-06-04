@@ -175,17 +175,40 @@
         <label for="email-client">E-mail</label>
         <input id="email-client" type="email"/>
 
-        <input id="create-login" type="checkbox"/>
-        <label for="create-login">Crea un account per questo indirizzo email</label>
+        <div class="wrap-checkbox">
+            <input id="create-login" type="checkbox"/>
+            <label for="create-login">Crea un account per questo indirizzo email</label>
+        </div>
 
-        <input id="delivery-another-adress" type="checkbox"/>
-        <label for="delivery-another-adress">Spedisci a un indirizzo diverso</label>
-
-
-
-
-
+        <div class="wrap-checkbox">
+            <input id="delivery-another-adress" type="checkbox"/>
+            <label for="delivery-another-adress">Spedisci a un indirizzo diverso</label>
+        </div>
     </form>
+</section>
+<section class="confirm-section">
+    <a href="#" class="big-btn">
+        Conferma e Procedi »
+        <span>(potrai modificare i dati più avanti)</span>
+    </a>
+</section>
+<section class="advantages-footer">
+    <div class="wrap-advantages-footer clearfix">
+        <div class="safe-deal">
+            <p>Comprare su CalcioShop ė 100% sicuro</p>
+        </div>
+        <div class="experience">
+            <p>Più di 40.000 prodotti personalizzati scorso anno.</p>
+        </div>
+    </div>
+    <div class="review clearfix">
+        <p>Il nostro ė valutato 9.5
+            su 10 da nostri clienti</p>
+        <div class="wrap-img">
+            <img src="images/trust-pilot-white.png" alt="trustpilot"/>
+        </div>
+    </div>
+
 </section>
 
 
@@ -220,8 +243,22 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
+<!-- 2. Подключим jQuery UI -->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<!--jQuery.plugins-->
 <script src="js/bootstrap.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+<!--Custom JS-->
+<script src="js/main.js"></script>
 </body>
 </html>
