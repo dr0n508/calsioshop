@@ -625,7 +625,8 @@ footer {
       text-align: left; }
 
 .welcome-section-checkout {
-  padding: 10px; }
+  padding: 10px;
+  border-bottom: solid 1px #f3f3f3; }
   .welcome-section-checkout h1 {
     font-size: 29px;
     font-family: "mohavebold", sans-serif;
@@ -635,12 +636,50 @@ footer {
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
   padding: 5px 0; }
-.checkout .info-text {
-  font-size: 12px;
-  margin: 10px 0 5px; }
+  .checkout h2 a {
+    font-size: 12px; }
 .checkout input[type=radio] {
   width: 20px;
   height: 20px; }
+.checkout .wrap-img {
+  width: 50%;
+  float: left; }
+.checkout .name-goods {
+  width: 50%;
+  float: left;
+  padding: 0 0 0 10px; }
+.checkout .price-quantity li {
+  width: 25%;
+  float: left; }
+  .checkout .price-quantity li .value-price-quantity {
+    font-size: 16px;
+    font-family: "mohavebold", sans-serif; }
+.checkout .sale-section p {
+  width: 75%;
+  float: left;
+  margin: 0;
+  padding: 0 25px 0 0; }
+.checkout .sale-section a {
+  width: 25%;
+  float: left;
+  margin-top: 20px; }
+
+.total-info p {
+  font-weight: 600; }
+  .total-info p span {
+    float: right; }
+.total-info .total-price {
+  font-family: "mohavebold", sans-serif;
+  font-size: 25px; }
+  .total-info .total-price span {
+    font-family: inherit; }
+
+.info-text {
+  font-size: 12px;
+  margin: 10px 0 5px; }
+  .info-text span {
+    font-weight: 600;
+    display: block; }
 
 .payment-data {
   padding: 10px;
@@ -681,12 +720,13 @@ footer {
 
 .confirm-section {
   padding: 10px !important;
-  border-top: solid 1px #dddddd;
   border-bottom: solid 1px #dddddd; }
   .confirm-section .big-btn span {
     text-align: center;
     display: block;
     font-size: 12px; }
+  .confirm-section .info-text {
+    text-align: center; }
 
 .advantages-footer {
   background: #f3f3f3; }
@@ -754,5 +794,14 @@ footer {
       .advantages-footer .review .wrap-img img {
         max-width: 100%;
         height: auto; }
+
+.classic-section {
+  background: #f3f3f3;
+  padding: 10px;
+  border-bottom: solid 1px #dddddd; }
+
+.classic-section-white {
+  padding: 10px;
+  border-bottom: solid 1px #dddddd; }
 
 /*# sourceMappingURL=main.css.map */

@@ -746,6 +746,7 @@ footer {
 
 .welcome-section-checkout {
   padding: 10px;
+  border-bottom: solid 1px #f3f3f3;
   h1 {
     font-size: 29px;
     font-family: "mohavebold", sans-serif;
@@ -758,16 +759,73 @@ footer {
     font-family: "mohavebold", sans-serif;
     font-size: 16px;
     padding: 5px 0;
-  }
-  .info-text {
-    font-size: 12px;
-    margin: 10px 0 5px;
+    a {
+      font-size: 12px;
+    }
   }
   input[type=radio] {
     width: 20px;
     height: 20px;
   }
+  .wrap-img {
+    width: 50%;
+    float: left;
+
+  }
+  .name-goods {
+    width: 50%;
+    float: left;
+    padding: 0 0 0 10px;
+  }
+  .price-quantity {
+    li {
+      width: 25%;
+      float: left;
+      .value-price-quantity {
+        font-size: 16px;
+        font-family: "mohavebold", sans-serif;
+      }
+    }
+  }
+  .sale-section {
+    p {
+      width: 75%;
+      float: left;
+      margin: 0;
+      padding: 0 25px 0 0;
+    }
+    a {
+      width: 25%;
+      float: left;
+      margin-top: 20px;
+    }
+  }
 }
+.total-info {
+  p {
+    font-weight: 600;
+    span {
+      float: right;
+    }
+  }
+  .total-price {
+    font-family: "mohavebold", sans-serif;
+    font-size: 25px;
+    span {
+      font-family: inherit;
+    }
+  }
+}
+
+.info-text {
+  font-size: 12px;
+  margin: 10px 0 5px;
+  span {
+    font-weight: 600;
+    display: block;
+  }
+}
+
 
 .payment-data {
   padding: 10px;
@@ -816,7 +874,7 @@ footer {
 
 .confirm-section {
   padding: 10px !important;
-  border-top: solid 1px #dddddd;
+//  border-top: solid 1px #dddddd;
   border-bottom: solid 1px #dddddd;
   .big-btn {
     span {
@@ -824,6 +882,9 @@ footer {
       display: block;
       font-size: 12px;
     }
+  }
+  .info-text {
+    text-align: center;
   }
 }
 
@@ -909,6 +970,16 @@ footer {
   }
 }
 
+.classic-section {
+  background: #f3f3f3;
+  padding: 10px;
+  border-bottom: solid 1px #dddddd;
+}
+
+.classic-section-white {
+  padding: 10px;
+  border-bottom: solid 1px #dddddd;
+}
 
 
 
