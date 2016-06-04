@@ -744,6 +744,27 @@ footer {
   }
 }
 
+.welcome-section-checkout {
+  padding: 10px;
+  h1 {
+    font-size: 29px;
+    font-family: "mohavebold", sans-serif;
+    margin: 5px 0;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+.checkout {
+  h2 {
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+
 .payment-data {
   padding: 10px;
   background: #f3f3f3;
