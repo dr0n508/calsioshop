@@ -614,15 +614,21 @@ footer {
     .checkout-menu .active a span {
       color: #000000; }
   .checkout-menu .your-data {
-    left: -4%; }
+    left: -4%;
+    width: 25%; }
   .checkout-menu .delivery-pay {
-    left: 24%; }
+    left: 21%;
+    width: 31%; }
   .checkout-menu .order {
-    left: 50%; }
+    left: 52%;
+    width: 26%; }
   .checkout-menu .confirmation {
-    left: 80%; }
+    left: 78%;
+    width: 32%; }
     .checkout-menu .confirmation a {
       text-align: left; }
+      .checkout-menu .confirmation a span {
+        padding-left: 8px; }
 
 .welcome-section-checkout {
   padding: 10px;

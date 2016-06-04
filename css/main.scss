@@ -729,17 +729,24 @@ footer {
   }
   .your-data {
     left: -4%;
+    width: 25%;
   }
   .delivery-pay {
-    left: 24%;
+    left: 21%;
+    width: 31%;
   }
   .order {
-    left: 50%;
+    left: 52%;
+    width: 26%;
   }
   .confirmation {
-    left: 80%;
+    left: 78%;
+    width: 32%;
     a {
       text-align: left;
+      span {
+        padding-left: 8px;
+      }
     }
   }
 }
