@@ -35,6 +35,25 @@ $(document).ready(function () {
     prevSelector: '#slider-prev'
   });
 
+    var sliderPopular = $('.slider-popular').bxSlider({
+        slideWidth: 128,
+        minSlides: 2,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 10,
+        pager: false,
+        hideControlOnEnd: true,
+        infiniteLoop: false,
+        nextText: 'Vedi tutto <span class="fa fa-chevron-right" aria-hidden="true"></span>',
+        prevText: '<span class="fa fa-chevron-left" aria-hidden="true"></span> Prev',
+        nextSelector: '#slider-next2',
+        prevSelector: '#slider-prev2'
+    });
+
+    $('#tabSlider').on('shown.bs.tab', function () {
+        sliderPopular.reloadSlider();
+    });
+
 
   /**
    * jQuery UI slider widget

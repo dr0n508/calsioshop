@@ -46,8 +46,12 @@
   background: #054182;
 }
 
+.bx-wrapper img {
+  margin: 0 auto;
+}
+
 .outside p {
-  #slider-prev, #slider-next {
+  #slider-prev, #slider-next, #slider-prev2, #slider-next2 {
     width: 50%;
     float: left;
     text-align: center;
@@ -62,7 +66,7 @@
   background: #f3f3f3;
   border-top: solid 1px #ffffff;
 }
-.outside #slider-prev, .outside #slider-next {
+.outside #slider-prev, .outside #slider-next, .outside #slider-prev2, .outside #slider-next2 {
   a {
     font-family: "mohavebold", sans-serif;
     font-size: 16px;
