@@ -133,7 +133,6 @@ $(document).ready(function () {
    * Highlight basket after item added to it
    */
   function highlightBasket (){
-    console.log($('.number-goods').text()*1 > 0);
     if ($('.number-goods').text()*1 > 0) {
       $('.basket-button').addClass('active');
     }
@@ -158,7 +157,6 @@ $(document).ready(function () {
         '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
       );
       // add filter selected items fot global filter view
-      console.log($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0);
       if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
         $('[data-global-filter-settings]').append(
           '<li data-filter=' + filterName + '>' + filterName + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
