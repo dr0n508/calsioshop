@@ -349,18 +349,18 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
         display: block;
         padding: 5px;
         margin-right: 10px; }
-    .filter-personal-prefer .number-players .checkbox22:not(checked) {
+    .filter-personal-prefer .number-players .radio-number-players:not(checked) {
       position: absolute;
       opacity: 0; }
-    .filter-personal-prefer .number-players .checkbox22:not(checked) + label {
+    .filter-personal-prefer .number-players .radio-number-players:not(checked) + label {
       color: #093d75;
       font-weight: 400; }
-      .filter-personal-prefer .number-players .checkbox22:not(checked) + label span {
+      .filter-personal-prefer .number-players .radio-number-players:not(checked) + label span {
         background: #ffffff; }
-    .filter-personal-prefer .number-players .checkbox22:checked + label {
+    .filter-personal-prefer .number-players .radio-number-players:checked + label {
       color: #000000;
       font-weight: 600; }
-      .filter-personal-prefer .number-players .checkbox22:checked + label span {
+      .filter-personal-prefer .number-players .radio-number-players:checked + label span {
         background: #f3f3f3; }
 
 /*# sourceMappingURL=category-goods.css.map */

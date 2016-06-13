@@ -482,18 +482,18 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
         margin-right: 10px;
       }
     }
-    .checkbox22:not(checked) {
+    .radio-number-players:not(checked) {
       position: absolute;
       opacity: 0;
     }
-    .checkbox22:not(checked) + label {
+    .radio-number-players:not(checked) + label {
       color: #093d75;
       font-weight: 400;
       span {
         background: #ffffff;
       }
     }
-    .checkbox22:checked + label {
+    .radio-number-players:checked + label {
       color: #000000;
       font-weight: 600;
       span {

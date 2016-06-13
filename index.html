@@ -38,59 +38,150 @@
                         <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
                     </div>
                 </form>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">SCARPE<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">ABBIGLIAMENTO<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">ATTREZZATURE<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">PORTIERE<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">URBAN<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle outlet-menu">OUTLET<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">MARCHI TOP<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">NOVITA'<span class="fa fa-chevron-down fa-5x"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="#">Login/ Registrati<span class="sr-only">(current)</span></a></li>
-                    <li class="active"><a href="#">Assistenza<span class="sr-only">(current)</span></a></li>
-                    <li class="active"><a href="#">Pagamenti<span class="sr-only">(current)</span></a></li>
-                </ul>
+                <div class="nav navbar-nav">
+                    <div id="main-menu">
+                        <div class="list-group panel">
+                            <a href="#shoes-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                SCARPE
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="shoes-menu">
+
+                                <a href="#sub-shoes" class="list-group-item" data-toggle="collapse" data-parent="#sub-shoes">Sub-Item
+                                    <span class="fa fa-chevron-right"></span>
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+
+
+                                <div class="collapse list-group-submenu" id="sub-shoes">
+                                    <a href="#SubSubShoes" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item1
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes">
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item3</a>
+                                    </div>
+
+                                    <a href="#SubSubShoes2" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">
+                                        Sub-Sub-Item2
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes2">
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item3</a>
+                                    </div>
+                                    <a href="#" class="list-group-item" data-parent="#sub-shoes">Sub-Sub-Item</a>
+
+
+                                </div>
+
+                                <a href="#" class="list-group-item">Sub-Item</a>
+
+                            </div>
+
+                            <a href="#clothing-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                ABBIGLIAMENTO
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="clothing-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#equipment-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                ATTREZZATURE
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="equipment-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#goalkeeper-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                PORTIERE
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="goalkeeper-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#urban-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                URBAN
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="urban-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#outlet-menu" class="list-group-item main-item outlet-red" data-toggle="collapse" data-parent="#main-menu">
+                                OUTLET
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="outlet-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#topBrand-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                MARCHI TOP
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="topBrand-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#news-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                NOVITA'
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="news-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Login/ Registrati
+                            </a>
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Assistenza
+                            </a>
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Pagamenti
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- /.navbar-collapse-->
         </div>
