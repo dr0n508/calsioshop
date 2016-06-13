@@ -94,7 +94,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 }
 
 .nav li {
-  @include rotate-arrow;
+//  @include rotate-arrow;
 //  float: none;
 
 }
@@ -102,8 +102,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #eeeeee;
 }
-
-
 
 .navbar-toggle {
   display: block !important;
@@ -178,10 +176,17 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   font-size: 16px;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus {
-  color: #da2620;
+.navbar-nav a.list-group-item, .navbar-nav button.list-group-item {
+  color: #00366e;
+}
+
+.outlet-red {
+  color: #da2620 !important;
+}
+
+.footer-main-menu {
+  background: #dfdfdf;
+  border-bottom: 1px solid #ffffff;
 }
 
 .navbar-default {
@@ -194,9 +199,9 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 .navbar-nav {
   float: none!important;
-  margin: 0 -15px;
+  margin: 0 -10px;
   li {
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #ddd;
     background: #f3f3f3;
   }
   li:first-child {
@@ -425,7 +430,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     a[aria-expanded="true"] {
       background: #cbd5e0;
     }
-    @include rotate-arrow
+//    @include rotate-arrow
   }
   .panel-collapse {
     background: #f3f3f3;
@@ -595,7 +600,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
         color: #011328;
       }
     }
-    @include rotate-arrow
+//    @include rotate-arrow
 
   }
   .login-button a {
